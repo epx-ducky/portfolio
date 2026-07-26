@@ -2,56 +2,12 @@ const projectData = {
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Avionik",
         tag: "Hardware, CAD & Flight Controller",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360. Erstellung von Fertigungsdateien für Carbon-Komponenten (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Integration und Kalibrierung der Avionik via ArduPilot / Flight Controller, Verdrahtung und Präzisionslöten der Elektronik (ESCs, Motoren, Kamera).",
-        tech: ["Autodesk Fusion 360", "ArduPilot", "Flight Controller (C++)", "3D-Druck / STL", "Elektronik-Löten"],
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360. Erstellung von Fertigungsdateien für Carbon-Komponenten (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Integration und Kalibrierung der Avionik via ArduPilot / Flight Controller in C++, Verdrahtung und Präzisionslöten der Elektronik (ESCs, Motoren, Kamera).",
+        tech: ["C++", "Autodesk Fusion 360", "ArduPilot", "Flight Controller", "3D-Druck / STL", "Elektronik-Löten"],
         highlights: [
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
-            "Software & Kalibrierung: ArduPilot Konfiguration & Flugeigenschafts-Feintuning"
-        ]
-    },
-    comonut: {
-        title: "🥥 Comonut App Platform",
-        tag: "iOS Native App & Datenbank-Architektur",
-        desc: "Entwicklung einer vollstrukturierten Community- und Event-Plattform für iOS mit Swift und Xcode. Inklusive komplettem Datenbank-Design (SQL Schema), Benutzerrollen, Auditor-Systemen und moderner UI.",
-        tech: ["Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
-        highlights: [
-            "Eigenes Datenbankschema (schema.sql) mit Benutzer- & Rechteverwaltung",
-            "Architektur: Auditor- & Reviewer-Mechanismen zur Inhaltsüberprüfung",
-            "Native iOS Xcode Projektstruktur mit sauberer MVC/MVVM Trennung"
-        ]
-    },
-    pulseai: {
-        title: "⚡ PulseAI App Platform",
-        tag: "Cross-Platform Mobile App & KI Integration",
-        desc: "Entwicklung einer modernen, performanten Mobile-App mit Flutter und Dart für iOS & Android. Fokus auf intelligentes Aktivitäts-Tracking, intuitive Benutzeroberfläche und KI-gestützte Datenanalyse.",
-        tech: ["Flutter", "Dart", "AI Integration", "iOS & Android"],
-        highlights: [
-            "Cross-Platform Deployment für iOS, Android und Web",
-            "Integration von KI-Schnittstellen für intelligentes Tracking",
-            "Moderne UI mit flüssigen Animationen und State Management"
-        ]
-    },
-    notenkorrigierer: {
-        title: "📝 Notenkorrigierer (EdTech AI Engine)",
-        tag: "Next.js Web App & KI OCR-Korrektur",
-        desc: "Entwicklung einer Web-Anwendung zur automatisierten KI-Korrektur von Prüfungen. Bild-Upload von Handgeschriebenem via OCR-Texterkennung, intelligente Noten- und Feedbackgenerierung über strukturierte LLM-Prompts.",
-        tech: ["Next.js", "TypeScript", "Multi-Page OCR", "AI Prompt Engineering", "SQL Database"],
-        highlights: [
-            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
-            "Agenten-Denkschritte für präzises, nachvollziehbares Feedback",
-            "PDF-Druckversion & automatische Generierung von Leistungsauswertungen"
-        ]
-    },
-    greenhouse: {
-        title: "🌱 Intelligentes Gewächshaus (Arduino)",
-        tag: "IoT, Embedded Systems & Sensorik",
-        desc: "Entwicklung und Programmierung eines vollautomatisierten Gewächshauses als Schulprojekt. Der Arduino steuert auf Basis von Sensor-Echtzeitdaten (Temperatur, Bodenfeuchtigkeit) automatisch Bewässerungspumpen und Status-LEDs.",
-        tech: ["Arduino IDE", "C / C++", "Bodenfeuchtigkeits- & Temperatursensorik", "Relais- & Aktorsteuerung"],
-        highlights: [
-            "Echtzeit-Schwellenwertsteuerung zur automatischen Bewässerung",
-            "Energieeffizientes Messintervall-Management im C++ Code",
-            "Praktischer Aufbau von Gehäuse, Verkabelung und Schaltelektronik"
+            "Software & Kalibrierung: ArduPilot Konfiguration in C++"
         ]
     },
     exif: {
@@ -63,6 +19,48 @@ const projectData = {
             "Reiner Binary-TIFF-Parser in Python ohne externe Abhängigkeiten",
             "Verarbeitung von 300+ Sony RAW-Dateien in unter 0,2 Sekunden",
             "Automatische Zuordnung von MP4-Videos und XML-Sidecar-Dateien"
+        ]
+    },
+    greenhouse: {
+        title: "🌱 Intelligentes Gewächshaus (Arduino)",
+        tag: "IoT, Embedded Systems & Sensorik",
+        desc: "Entwicklung und Programmierung eines vollautomatisierten Gewächshauses als Schulprojekt. Der Arduino steuert auf Basis von Sensor-Echtzeitdaten in C/C++ (Temperatur, Bodenfeuchtigkeit) automatisch Bewässerungspumpen und Status-LEDs.",
+        tech: ["C / C++", "Arduino IDE", "Bodenfeuchtigkeits- & Temperatursensorik", "Relais- & Aktorsteuerung"],
+        highlights: [
+            "Echtzeit-Schwellenwertsteuerung zur automatischen Bewässerung",
+            "Energieeffizientes Messintervall-Management im C++ Code",
+            "Praktischer Aufbau von Gehäuse, Verkabelung und Schaltelektronik"
+        ]
+    },
+    notenkorrigierer: {
+        title: "📝 Notenkorrigierer (EdTech AI Engine)",
+        tag: "Python & KI OCR-Korrektur",
+        desc: "Entwicklung von Algorithmen zur KI-unterstützten Auswertung und Korrektur von Prüfungen. Bild-Upload von Handgeschriebenem via OCR-Texterkennung, intelligente Noten- und Feedbackgenerierung über strukturierte Prompts.",
+        tech: ["Python", "OCR & AI Prompting", "Datenverarbeitung"],
+        highlights: [
+            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
+            "Präzises, nachvollziehbares Feedback via KI-Logik",
+            "Automatische Generierung von Leistungsauswertungen"
+        ]
+    },
+    pulseai: {
+        title: "⚡ PulseAI Platform",
+        tag: "KI-Anwendungsentwicklung",
+        desc: "Konzeption und Entwicklung von intelligenter Anwendungslogik in Python. Fokus auf intelligentes Aktivitäts-Tracking und KI-unterstützte Datenanalyse.",
+        tech: ["Python", "AI Integration", "Data Processing"],
+        highlights: [
+            "Integration von KI-Schnittstellen für intelligentes Tracking",
+            "Datenanalyse und Auswertungslogik in Python"
+        ]
+    },
+    comonut: {
+        title: "🥥 Comonut Platform",
+        tag: "Datenbank-Architektur & Systementwurf",
+        desc: "Entwicklung von Datenbank-Architekturen und Logik für Community-Plattformen. Inklusive komplettem Datenbank-Design (SQL Schema), Benutzerrollen und Auditor-Systemen.",
+        tech: ["SQL", "Datenbank-Architektur", "Systemdesign"],
+        highlights: [
+            "Eigenes Datenbankschema (schema.sql) mit Benutzer- & Rechteverwaltung",
+            "Architektur: Auditor- & Reviewer-Mechanismen zur Inhaltsüberprüfung"
         ]
     }
 };
