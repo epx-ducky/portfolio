@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background Glow Elements -->
     <div class="bg-glow glow-1"></div>
     <div class="bg-glow glow-2"></div>
 
@@ -34,17 +33,16 @@
             Lieblingsfächer: Mathematik (14 Pkt.) &amp; Physik (15 Pkt.).
         </p>
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">Projekte entdecken ➔</a>
-            <a href="#contact" class="btn btn-secondary">Profil anfordern</a>
+            <a href="#projects" class="btn btn-primary">Projekte testen &amp; öffnen ➔</a>
+            <a href="#about" class="btn btn-secondary">Profil anfordern</a>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title">Projekte &amp; Entwicklungen</h2>
-        <p class="section-subtitle">Eine Auswahl meiner bisherigen Hardware-, KI- und Software-Projekte</p>
+        <h2 class="section-title">Projekte &amp; Interaktive Demos</h2>
+        <p class="section-subtitle">Klicke auf ein Projekt, um Details, Schaltpläne und Quellcode zu öffnen</p>
 
         <div class="project-grid">
-            <!-- Project 1: FPV Drone -->
             <div class="project-card featured">
                 <div class="card-tag">Hardware &amp; CAD</div>
                 <h3>🛸 FPV-Drohnen Konstruktion &amp; Avionik</h3>
@@ -58,14 +56,33 @@
                     <span>C++ / Embedded</span>
                     <span>3D-Druck / STL</span>
                 </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('fpv')">🔍 CAD-Details &amp; Aufbau öffnen</button>
+                </div>
             </div>
 
-            <!-- Project 2: PulseAI -->
+            <div class="project-card featured">
+                <div class="card-tag">iOS &amp; Community App</div>
+                <h3>🥥 Comonut App Platform</h3>
+                <p>
+                    Vollwertige Community- und Event-Plattform für iOS (Swift &amp; Xcode). Inklusive Datenbank-Schema, Benutzerverwaltung, Event-Feeds und moderner UI.
+                </p>
+                <div class="tech-stack">
+                    <span>Swift</span>
+                    <span>Xcode</span>
+                    <span>SQL / Database</span>
+                    <span>iOS App</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('comonut')">📱 App-Details öffnen</button>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="card-tag">Mobile &amp; KI App</div>
                 <h3>⚡ PulseAI App Platform</h3>
                 <p>
-                    Cross-Plattform KI-Anwendung entwickelt mit <strong>Flutter &amp; Dart</strong> für iOS und Android. Fokus auf intelligentes Performance-Tracking, intuitive Benutzeroberfläche und KI-unterstützte Interaktion.
+                    Cross-Plattform KI-Anwendung entwickelt mit <strong>Flutter &amp; Dart</strong> für iOS und Android. Fokus auf intelligentes Performance-Tracking und KI-unterstützte Interaktion.
                 </p>
                 <div class="tech-stack">
                     <span>Flutter</span>
@@ -73,9 +90,28 @@
                     <span>AI Integration</span>
                     <span>iOS / Android</span>
                 </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('pulseai')">⚡ App-Vorschau öffnen</button>
+                </div>
             </div>
 
-            <!-- Project 3: Smart Greenhouse -->
+            <div class="project-card">
+                <div class="card-tag">KI &amp; Web App</div>
+                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
+                <p>
+                    Webbasierte Next.js Anwendung zur KI-unterstützten Auswertung und Korrektur von Klassenarbeiten und OCR-Texterkennung. Integration von LLM-Schnittstellen.
+                </p>
+                <div class="tech-stack">
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>OCR &amp; AI Prompting</span>
+                    <span>Tailwind / Web</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 App-Details öffnen</button>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="card-tag">IoT &amp; Sensorik</div>
                 <h3>🌱 Intelligentes Gewächshaus (Arduino)</h3>
@@ -88,47 +124,24 @@
                     <span>Sensorik &amp; Aktorik</span>
                     <span>IoT</span>
                 </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('greenhouse')">🌱 Schaltplan &amp; Details öffnen</button>
+                </div>
             </div>
 
-            <!-- Project 4: EXIF Media Automation -->
             <div class="project-card">
                 <div class="card-tag">Python Scripting</div>
                 <h3>📁 EXIF Media Auto-Organizer</h3>
                 <p>
-                    Hochleistungs-Python-Skript zur automatischen Analyse von TIFF/EXIF-Metadaten aus Sony RAW-Dateien (.ARW) und 4K-Videos (.MP4/XML). Automatische Sortierung in zeitbasierte Ordnerstrukturen mit 100% Präzision.
+                    Hochleistungs-Python-Skript zur automatischen Analyse von TIFF/EXIF-Metadaten aus Sony RAW-Dateien (.ARW) und 4K-Videos (.MP4/XML). Automatische Sortierung in zeitbasierte Ordnerstrukturen.
                 </p>
                 <div class="tech-stack">
                     <span>Python 3</span>
                     <span>EXIF / TIFF Parsing</span>
                     <span>File System Automation</span>
                 </div>
-            </div>
-
-            <!-- Project 5: EdTech Grading Engine -->
-            <div class="project-card">
-                <div class="card-tag">KI &amp; Web App</div>
-                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
-                <p>
-                    Webbasierte Anwendung zur KI-unterstützten Auswertung und Korrektur von Tests. Integration modernster LLM-Schnittstellen zur automatisierten Feedbackgenerierung.
-                </p>
-                <div class="tech-stack">
-                    <span>TypeScript</span>
-                    <span>AI Prompting / API</span>
-                    <span>Web Framework</span>
-                </div>
-            </div>
-
-            <!-- Project 6: FrameRush Media -->
-            <div class="project-card">
-                <div class="card-tag">Media &amp; Web</div>
-                <h3>🎥 FrameRush Platform</h3>
-                <p>
-                    Webplattform für FPV-Luftaufnahmen und Videoschnitt. Integration von DaVinci Resolve Studio Workflows, Video-Showcases und optimiertem Mediendesign.
-                </p>
-                <div class="tech-stack">
-                    <span>HTML5 / CSS3</span>
-                    <span>JavaScript</span>
-                    <span>DaVinci Resolve Studio</span>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('exif')">🐍 Python Script Details öffnen</button>
                 </div>
             </div>
         </div>
@@ -142,7 +155,7 @@
                 <ul>
                     <li>C / C++</li>
                     <li>Python</li>
-                    <li>Dart / JavaScript</li>
+                    <li>Dart / Swift / JavaScript</li>
                     <li>HTML5 &amp; CSS3</li>
                 </ul>
             </div>
@@ -162,7 +175,7 @@
                 <ul>
                     <li>Claude Code / Google Antigravity</li>
                     <li>VS Code / Git</li>
-                    <li>Flutter &amp; Web Apps</li>
+                    <li>Flutter &amp; Next.js Web Apps</li>
                     <li>Linux &amp; Automation Scripts</li>
                 </ul>
             </div>
@@ -191,6 +204,13 @@
             </p>
         </div>
     </section>
+
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
     <footer id="contact">
         <p>&copy; 2026 Developer &amp; Engineer Portfolio | Bereit für das Duale Studium 2027</p>
