@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | KI-Entwicklung, Drohnen-Engineering & Systems</title>
+    <title>Portfolio | Drohnen-Programmierung, KI-Entwicklung & Apps</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
     <header class="navbar">
         <div class="logo">
-            <span class="logo-bracket">&lt;</span>AI &amp; Drone Engineer<span class="logo-bracket">/&gt;</span>
+            <span class="logo-bracket">&lt;</span>Developer &amp; Drone Engineer<span class="logo-bracket">/&gt;</span>
         </div>
         <nav>
             <a href="#about">Über mich</a>
@@ -27,87 +27,140 @@
 
     <section class="hero">
         <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
-        <h1 class="hero-title">KI-Entwicklung, <span class="gradient-text">Drohnentechnik</span> &amp; Software-Systeme</h1>
+        <h1 class="hero-title">Drohnen-Programmierung, <span class="gradient-text">KI-Entwicklung</span> &amp; Apps</h1>
         <p class="hero-sub">
-            Entwicklung von Drohnen-Algorithmen, Apps und Webseiten durch den gezielten Einsatz moderner KI-Systeme (Claude Code, Google Antigravity). 
-            Konstruktion eigener FPV-Drohnen (Fusion 360) &amp; ArduPilot. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
+            Konstruktion und Programmierung von FPV-Drohnen (ArduPilot / Fusion 360) sowie KI-gestützte Entwicklung innovativer Apps &amp; Webseiten (Grady, Comonut, PersonalManager, 1%-Methode, Notenkorrigierer). Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
         </p>
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">Projekte öffnen ➔</a>
+            <a href="#projects" class="btn btn-primary">Projekte entdecken &amp; öffnen ➔</a>
             <a href="#about" class="btn btn-secondary">Profil anfordern</a>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title">Projekte &amp; Entwicklungen</h2>
-        <p class="section-subtitle">Klicke auf ein Projekt, um Details und Umsetzungsschritte zu öffnen</p>
+        <h2 class="section-title">Meine Echten Projekte</h2>
+        <p class="section-subtitle">Klicke auf ein Projekt, um Details, Funktionsweise und Aufbau zu öffnen</p>
 
         <div class="project-grid">
+            <!-- 1. Drohnen -->
             <div class="project-card featured">
-                <div class="card-tag">Hardware &amp; CAD</div>
-                <h3>🛸 FPV-Drohnen Konstruktion &amp; Avionik</h3>
+                <div class="card-tag">Hardware &amp; Avionik</div>
+                <h3>🛸 FPV-Drohnen Konstruktion &amp; Flug-Programmierung</h3>
                 <p>
-                    Eigenständige Konstruktion von Frame-Komponenten (Baseplate, Arme, Kamera- &amp; Antennenhalterungen) in <strong>Autodesk Fusion 360</strong>. 
-                    Verkabelung, Elektronik-Löten und Kalibrierung der Flugsteuerung via <strong>ArduPilot / Flight Controller</strong>.
+                    Eigenständige Konstruktion von Frame-Komponenten in <strong>Autodesk Fusion 360</strong>. Verkabelung, Löten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via <strong>ArduPilot</strong>, sodass die Drohne stabil und präzise fliegt.
                 </p>
                 <div class="tech-stack">
-                    <span>Autodesk Fusion 360</span>
                     <span>ArduPilot</span>
+                    <span>Autodesk Fusion 360</span>
                     <span>Hardware-Löten</span>
                     <span>3D-Druck / STL</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('fpv')">🔍 CAD-Details &amp; Aufbau öffnen</button>
+                    <button class="btn-card" onclick="openModal('fpv')">🔍 Drohnen-Details öffnen</button>
                 </div>
             </div>
 
+            <!-- 2. Comonut -->
             <div class="project-card featured">
-                <div class="card-tag">KI &amp; Drohnen-Algorithmen</div>
-                <h3>🧠 KI-Algorithmen für Drohnensteuerung</h3>
+                <div class="card-tag">iOS &amp; Community App</div>
+                <h3>🥥 Comonut App Platform</h3>
                 <p>
-                    Konzeption und Erstellung von KI-unterstützten Algorithmen und Steuerungslogiken für autonome Systeme. Entwickelt unter Einsatz moderner KI-Agentensysteme (Claude Code &amp; Antigravity).
+                    Vollstrukturierte Community- und Event-Plattform für iOS. Inklusive eigenem Datenbank-Design (schema.sql), Benutzerrollen, Auditor-Systemen und nativer Xcode-Architektur.
                 </p>
                 <div class="tech-stack">
-                    <span>KI-Prompt Engineering</span>
-                    <span>Claude Code</span>
-                    <span>Google Antigravity</span>
-                    <span>Drohnen-Logik</span>
+                    <span>Swift / Xcode</span>
+                    <span>SQL Database</span>
+                    <span>System-Architektur</span>
+                    <span>iOS App</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('drone_ai')">🤖 KI-Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('comonut')">📱 App-Details öffnen</button>
                 </div>
             </div>
 
+            <!-- 3. Grady -->
             <div class="project-card">
-                <div class="card-tag">KI-Webentwicklung</div>
-                <h3>🌐 KI-gestützte Webseiten &amp; Apps (10+ Projekte)</h3>
+                <div class="card-tag">KI &amp; App Development</div>
+                <h3>🎓 Grady App</h3>
                 <p>
-                    Entwicklung von über 10 interaktiven Webseiten und App-Projekten. Effiziente Umsetzung komplexer Benutzeroberflächen und Datenlogik durch den gezielten Einsatz von KI-Tools.
+                    Intelligente Schul- &amp; Lernanwendung. Entwickelt mit modernsten KI-Entwicklungswerkzeugen zur Unterstützung von Schülern beim Lernen und Notenmanagement.
                 </p>
                 <div class="tech-stack">
                     <span>KI-Entwicklung</span>
-                    <span>Web &amp; App Architecture</span>
-                    <span>UI / UX Design</span>
+                    <span>App Architecture</span>
+                    <span>Claude Code / Antigravity</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('web_apps')">💻 Web- &amp; App-Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('grady')">🎓 Grady Details öffnen</button>
                 </div>
             </div>
 
+            <!-- 4. PersonalManager -->
+            <div class="project-card">
+                <div class="card-tag">iOS &amp; Productivity</div>
+                <h3>📊 PersonalManager App</h3>
+                <p>
+                    Native iOS-Anwendung für persönliches Aufgaben- &amp; Fokus-Management. Mit DashboardView, TaskListView, ProactiveTimelineView und ScreenTime-Verwaltung.
+                </p>
+                <div class="tech-stack">
+                    <span>Swift / SwiftUI</span>
+                    <span>Timeline Logic</span>
+                    <span>ScreenTime Manager</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details öffnen</button>
+                </div>
+            </div>
+
+            <!-- 5. 1%-Methode -->
+            <div class="project-card">
+                <div class="card-tag">Focus &amp; Habit App</div>
+                <h3>🌱 1%-Methode App</h3>
+                <p>
+                    Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Strukturierte Datenbank, Habit-Tracking und fokussierte Benutzerführung.
+                </p>
+                <div class="tech-stack">
+                    <span>App Architecture</span>
+                    <span>Database Design</span>
+                    <span>Xcode</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('one_percent')">🌱 1%-Methode Details öffnen</button>
+                </div>
+            </div>
+
+            <!-- 6. Notenkorrigierer -->
+            <div class="project-card">
+                <div class="card-tag">EdTech AI Engine</div>
+                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
+                <p>
+                    Webanwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung.
+                </p>
+                <div class="tech-stack">
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>OCR &amp; AI Prompting</span>
+                    <span>SQL</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 Details öffnen</button>
+                </div>
+            </div>
+
+            <!-- 7. Gewächshaus -->
             <div class="project-card">
                 <div class="card-tag">IoT &amp; Sensorik</div>
-                <h3>🌱 Intelligentes Gewächshaus (Arduino)</h3>
+                <h3>🌿 Intelligentes Gewächshaus (Arduino)</h3>
                 <p>
-                    Automatisierte Umgebungssteuerung auf Arduino-Basis als Schulprojekt. Erfassung von Temperatur- und Bodenfeuchtigkeitswerten mit automatisierter Bewässerung und Statussteuerung.
+                    Automatisierte Umgebungssteuerung auf Arduino-Basis als Schulprojekt. Erfassung von Temperatur- und Bodenfeuchtigkeitswerten mit automatisierter Bewässerung.
                 </p>
                 <div class="tech-stack">
                     <span>Arduino IDE</span>
+                    <span>C / C++</span>
                     <span>Sensorik &amp; Aktorik</span>
-                    <span>Schaltkreise</span>
-                    <span>IoT</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('greenhouse')">🌱 Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('greenhouse')">🌿 Details öffnen</button>
                 </div>
             </div>
         </div>
@@ -117,12 +170,12 @@
         <h2 class="section-title">Skills &amp; Arbeitsweise</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h4>🤖 KI-Entwicklung &amp; Tools</h4>
+                <h4>🤖 KI &amp; Softwareentwicklung</h4>
                 <ul>
                     <li>Claude Code &amp; Google Antigravity</li>
-                    <li>KI-unterstützte Softwareerstellung</li>
-                    <li>System-Prompting &amp; KI-Algorithmen</li>
-                    <li>VS Code</li>
+                    <li>KI-gestützte App- &amp; Webentwicklung</li>
+                    <li>Entwicklung von Grady, Comonut, PersonalManager, 1%-Methode</li>
+                    <li>C++ &amp; Python</li>
                 </ul>
             </div>
 
@@ -131,7 +184,7 @@
                 <ul>
                     <li>Autodesk Fusion 360 (CAD)</li>
                     <li>FPV-Drohnenbau &amp; Löten</li>
-                    <li>ArduPilot / Flight Controller</li>
+                    <li>ArduPilot Flugsteuerung &amp; Programmierung</li>
                     <li>Arduino IDE &amp; Sensorik</li>
                 </ul>
             </div>
@@ -163,7 +216,7 @@
         <div class="about-card">
             <p>
                 Ich besuche das <strong>Kaufmännische Gymnasium Ehingen (KSE)</strong> nahe Ulm und schließe mein Abitur im <strong>Juli 2027</strong> ab. 
-                Meine absolute Leidenschaft liegt in der Kombination von <strong>Drohnentechnik, Hardware und KI-Entwicklung</strong> – von der CAD-Konstruktion eigener FPV-Drohnen bis hin zum Bau von Webseiten, Apps und Drohnen-Algorithmen mit Hilfe moderner KI-Entwicklungstools (Claude Code, Google Antigravity).
+                Meine absolute Leidenschaft liegt in der Kombination von <strong>Drohnentechnik, Hardware und KI-gestützter Entwicklung</strong> – von der CAD-Konstruktion eigener FPV-Drohnen bis hin zum Bau innovativer Apps (Grady, Comonut, PersonalManager, 1%-Methode, Notenkorrigierer) mithilfe moderner KI-Entwicklungstools.
             </p>
             <p>
                 Mein Ziel: Ein <strong>Duales Studium (Data Science &amp; KI / Informatik) ab September 2027</strong> bei einem führenden High-Tech- und Rüstungsunternehmen.
