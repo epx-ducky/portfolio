@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Embedded Systems, KI & Drohnen-Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Glow Elements -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Developer &amp; Engineer<span class="logo-bracket">/&gt;</span>
+        </div>
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#projects">Projekte</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-btn">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
+        <h1 class="hero-title">Embedded Systems, <span class="gradient-text">Künstliche Intelligenz</span> &amp; Drohnentechnik</h1>
+        <p class="hero-sub">
+            Entwickler &amp; Nachwuchs-Ingenieur mit Fokus auf C++, Python, ArduPilot, FPV-Drohnenkonstruktion (Fusion 360) und KI-Anwendungen. 
+            Lieblingsfächer: Mathematik (14 Pkt.) &amp; Physik (15 Pkt.).
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Projekte entdecken ➔</a>
+            <a href="#contact" class="btn btn-secondary">Profil anfordern</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projekte &amp; Entwicklungen</h2>
+        <p class="section-subtitle">Eine Auswahl meiner bisherigen Hardware-, KI- und Software-Projekte</p>
+
+        <div class="project-grid">
+            <!-- Project 1: FPV Drone -->
+            <div class="project-card featured">
+                <div class="card-tag">Hardware &amp; CAD</div>
+                <h3>🛸 FPV-Drohnen Konstruktion &amp; Avionik</h3>
+                <p>
+                    Eigenständige Konstruktion von Frame-Komponenten (Baseplate, Arme, Kamera- &amp; Antennenhalterungen) in <strong>Autodesk Fusion 360</strong>. 
+                    Verkabelung, Löten der ESCs/Motoren und Kalibrierung der Flugsteuerung via <strong>ArduPilot / Flight Controller</strong>.
+                </p>
+                <div class="tech-stack">
+                    <span>Autodesk Fusion 360</span>
+                    <span>ArduPilot</span>
+                    <span>C++ / Embedded</span>
+                    <span>3D-Druck / STL</span>
+                </div>
+            </div>
+
+            <!-- Project 2: PulseAI -->
+            <div class="project-card">
+                <div class="card-tag">Mobile &amp; KI App</div>
+                <h3>⚡ PulseAI App Platform</h3>
+                <p>
+                    Cross-Plattform KI-Anwendung entwickelt mit <strong>Flutter &amp; Dart</strong> für iOS und Android. Fokus auf intelligentes Performance-Tracking, intuitive Benutzeroberfläche und KI-unterstützte Interaktion.
+                </p>
+                <div class="tech-stack">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>AI Integration</span>
+                    <span>iOS / Android</span>
+                </div>
+            </div>
+
+            <!-- Project 3: Smart Greenhouse -->
+            <div class="project-card">
+                <div class="card-tag">IoT &amp; Sensorik</div>
+                <h3>🌱 Intelligentes Gewächshaus (Arduino)</h3>
+                <p>
+                    Automatisierte Umgebungssteuerung auf Arduino-Basis. Erfassung von Temperatur- und Bodenfeuchtigkeitswerten mit automatisierter Bewässerung und LED-Statussteuerung.
+                </p>
+                <div class="tech-stack">
+                    <span>Arduino IDE</span>
+                    <span>C++</span>
+                    <span>Sensorik &amp; Aktorik</span>
+                    <span>IoT</span>
+                </div>
+            </div>
+
+            <!-- Project 4: EXIF Media Automation -->
+            <div class="project-card">
+                <div class="card-tag">Python Scripting</div>
+                <h3>📁 EXIF Media Auto-Organizer</h3>
+                <p>
+                    Hochleistungs-Python-Skript zur automatischen Analyse von TIFF/EXIF-Metadaten aus Sony RAW-Dateien (.ARW) und 4K-Videos (.MP4/XML). Automatische Sortierung in zeitbasierte Ordnerstrukturen mit 100% Präzision.
+                </p>
+                <div class="tech-stack">
+                    <span>Python 3</span>
+                    <span>EXIF / TIFF Parsing</span>
+                    <span>File System Automation</span>
+                </div>
+            </div>
+
+            <!-- Project 5: EdTech Grading Engine -->
+            <div class="project-card">
+                <div class="card-tag">KI &amp; Web App</div>
+                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
+                <p>
+                    Webbasierte Anwendung zur KI-unterstützten Auswertung und Korrektur von Tests. Integration modernster LLM-Schnittstellen zur automatisierten Feedbackgenerierung.
+                </p>
+                <div class="tech-stack">
+                    <span>TypeScript</span>
+                    <span>AI Prompting / API</span>
+                    <span>Web Framework</span>
+                </div>
+            </div>
+
+            <!-- Project 6: FrameRush Media -->
+            <div class="project-card">
+                <div class="card-tag">Media &amp; Web</div>
+                <h3>🎥 FrameRush Platform</h3>
+                <p>
+                    Webplattform für FPV-Luftaufnahmen und Videoschnitt. Integration von DaVinci Resolve Studio Workflows, Video-Showcases und optimiertem Mediendesign.
+                </p>
+                <div class="tech-stack">
+                    <span>HTML5 / CSS3</span>
+                    <span>JavaScript</span>
+                    <span>DaVinci Resolve Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills &amp; Kompetenzen</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>💻 Programmiersprachen</h4>
+                <ul>
+                    <li>C / C++</li>
+                    <li>Python</li>
+                    <li>Dart / JavaScript</li>
+                    <li>HTML5 &amp; CSS3</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>🛸 Embedded &amp; Hardware</h4>
+                <ul>
+                    <li>Arduino (Arduino IDE)</li>
+                    <li>ArduPilot / Flight Controller</li>
+                    <li>Autodesk Fusion 360 (CAD)</li>
+                    <li>Sensorik &amp; Löten</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>🤖 KI &amp; Dev Tools</h4>
+                <ul>
+                    <li>Claude Code / Google Antigravity</li>
+                    <li>VS Code / Git</li>
+                    <li>Flutter &amp; Web Apps</li>
+                    <li>Linux &amp; Automation Scripts</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>🎬 Medien &amp; Sonstiges</h4>
+                <ul>
+                    <li>DaVinci Resolve Studio</li>
+                    <li>FPV-Drohnennavigation</li>
+                    <li>Mathe (14 Pkt.) &amp; Physik (15 Pkt.)</li>
+                    <li>Wirtschaftsinformatik (14 Pkt.)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2 class="section-title">Über mich</h2>
+        <div class="about-card">
+            <p>
+                Ich besuche das <strong>Kaufmännische Gymnasium Ehingen (KSE)</strong> nahe Ulm und schließe mein Abitur im <strong>Juli 2027</strong> ab. 
+                Meine absolute Leidenschaft liegt in der Verbindung von <strong>Hardware, Embedded Systems und künstlicher Intelligenz</strong> – von der CAD-Konstruktion eigener FPV-Drohnen bis hin zur Programmierung autonomer Steuerungsskripte in C++ und Python.
+            </p>
+            <p>
+                Mein Ziel: Ein <strong>Duales Studium (Elektrotechnik / Embedded Systems / Informatik) ab September 2027</strong> bei einem führenden High-Tech- und Rüstungsunternehmen.
+            </p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 Developer &amp; Engineer Portfolio | Bereit für das Duale Studium 2027</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
