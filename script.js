@@ -2,65 +2,45 @@ const projectData = {
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Avionik",
         tag: "Hardware, CAD & Flight Controller",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360. Erstellung von Fertigungsdateien für Carbon-Komponenten (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Integration und Kalibrierung der Avionik via ArduPilot / Flight Controller in C++, Verdrahtung und Präzisionslöten der Elektronik (ESCs, Motoren, Kamera).",
-        tech: ["C++", "Autodesk Fusion 360", "ArduPilot", "Flight Controller", "3D-Druck / STL", "Elektronik-Löten"],
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360. Erstellung von Fertigungsdateien für Carbon-Komponenten (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Integration und Kalibrierung der Avionik via ArduPilot / Flight Controller, Verdrahtung und Präzisionslöten der Elektronik (ESCs, Motoren, Kamera).",
+        tech: ["Autodesk Fusion 360", "ArduPilot", "Flight Controller", "3D-Druck / STL", "Elektronik-Löten"],
         highlights: [
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
-            "Software & Kalibrierung: ArduPilot Konfiguration in C++"
+            "Software & Kalibrierung: ArduPilot Konfiguration & Flugsteuerung"
         ]
     },
-    exif: {
-        title: "📁 EXIF Media Auto-Organizer",
-        tag: "Python 3 Automation & TIFF Metadata",
-        desc: "Entwicklung eines Hochleistungs-Python-Skripts zur automatischen Analyse von TIFF- und EXIF-Metadaten aus Sony RAW (.ARW) Fotos und 4K (.MP4/XML) Videos. Vollautomatische Sortierung von hunderten Dateien in Datums-Ordnerstrukturen ohne Qualitätsverlust.",
-        tech: ["Python 3", "TIFF / EXIF Binary Parsing", "File System Automation"],
+    drone_ai: {
+        title: "🧠 KI-Algorithmen für Drohnensteuerung",
+        tag: "KI-Entwicklung & Autonome Logik",
+        desc: "Konzeption von KI-Algorithmen und Steuerungslogik für autonome Systeme und Drohnen. Entwicklung durch den gezielten Einsatz moderner KI-Entwicklerwerkzeuge wie Claude Code und Google Antigravity.",
+        tech: ["KI-Prompt Engineering", "Claude Code", "Google Antigravity", "Drohnen-Logik"],
         highlights: [
-            "Reiner Binary-TIFF-Parser in Python ohne externe Abhängigkeiten",
-            "Verarbeitung von 300+ Sony RAW-Dateien in unter 0,2 Sekunden",
-            "Automatische Zuordnung von MP4-Videos und XML-Sidecar-Dateien"
+            "Entwurf intelligenter Logikketten für autonome Abläufe",
+            "Nutzung fortschrittlicher AI-Agents zur schnellen Prototypenerstellung",
+            "Verknüpfung von Steuerungsbefehlen mit KI-Entwicklungs-Workflows"
+        ]
+    },
+    web_apps: {
+        title: "🌐 KI-gestützte Webseiten & Apps (10+ Projekte)",
+        tag: "Software- & App-Entwicklung mit KI",
+        desc: "Entwicklung von über 10 interaktiven Anwendungen, Webseiten und App-Projekten. Effiziente Konzeption, Architektur und Umsetzung durch KI-Entwicklungstools.",
+        tech: ["KI-Entwicklung", "Web & App Architecture", "UI / UX Design", "VS Code"],
+        highlights: [
+            "Über 10 erfolgreich umgesetzte Web- und App-Projekte",
+            "Strukturierte Architektur und modernes UI/UX-Design",
+            "Zukunftsorientierte Arbeitsweise mit KI-Assistenten"
         ]
     },
     greenhouse: {
         title: "🌱 Intelligentes Gewächshaus (Arduino)",
         tag: "IoT, Embedded Systems & Sensorik",
-        desc: "Entwicklung und Programmierung eines vollautomatisierten Gewächshauses als Schulprojekt. Der Arduino steuert auf Basis von Sensor-Echtzeitdaten in C/C++ (Temperatur, Bodenfeuchtigkeit) automatisch Bewässerungspumpen und Status-LEDs.",
-        tech: ["C / C++", "Arduino IDE", "Bodenfeuchtigkeits- & Temperatursensorik", "Relais- & Aktorsteuerung"],
+        desc: "Entwicklung und Programmierung eines vollautomatisierten Gewächshauses als Schulprojekt. Der Arduino steuert auf Basis von Sensor-Echtzeitdaten (Temperatur, Bodenfeuchtigkeit) automatisch Bewässerungspumpen und Status-LEDs.",
+        tech: ["Arduino IDE", "Bodenfeuchtigkeits- & Temperatursensorik", "Relais- & Aktorsteuerung"],
         highlights: [
             "Echtzeit-Schwellenwertsteuerung zur automatischen Bewässerung",
-            "Energieeffizientes Messintervall-Management im C++ Code",
+            "Messintervall-Management im C++ Code",
             "Praktischer Aufbau von Gehäuse, Verkabelung und Schaltelektronik"
-        ]
-    },
-    notenkorrigierer: {
-        title: "📝 Notenkorrigierer (EdTech AI Engine)",
-        tag: "Python & KI OCR-Korrektur",
-        desc: "Entwicklung von Algorithmen zur KI-unterstützten Auswertung und Korrektur von Prüfungen. Bild-Upload von Handgeschriebenem via OCR-Texterkennung, intelligente Noten- und Feedbackgenerierung über strukturierte Prompts.",
-        tech: ["Python", "OCR & AI Prompting", "Datenverarbeitung"],
-        highlights: [
-            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
-            "Präzises, nachvollziehbares Feedback via KI-Logik",
-            "Automatische Generierung von Leistungsauswertungen"
-        ]
-    },
-    pulseai: {
-        title: "⚡ PulseAI Platform",
-        tag: "KI-Anwendungsentwicklung",
-        desc: "Konzeption und Entwicklung von intelligenter Anwendungslogik in Python. Fokus auf intelligentes Aktivitäts-Tracking und KI-unterstützte Datenanalyse.",
-        tech: ["Python", "AI Integration", "Data Processing"],
-        highlights: [
-            "Integration von KI-Schnittstellen für intelligentes Tracking",
-            "Datenanalyse und Auswertungslogik in Python"
-        ]
-    },
-    comonut: {
-        title: "🥥 Comonut Platform",
-        tag: "Datenbank-Architektur & Systementwurf",
-        desc: "Entwicklung von Datenbank-Architekturen und Logik für Community-Plattformen. Inklusive komplettem Datenbank-Design (SQL Schema), Benutzerrollen und Auditor-Systemen.",
-        tech: ["SQL", "Datenbank-Architektur", "Systemdesign"],
-        highlights: [
-            "Eigenes Datenbankschema (schema.sql) mit Benutzer- & Rechteverwaltung",
-            "Architektur: Auditor- & Reviewer-Mechanismen zur Inhaltsüberprüfung"
         ]
     }
 };

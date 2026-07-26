@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Embedded Systems, KI & Drohnen-Engineering</title>
+    <title>Portfolio | KI-Entwicklung, Drohnen-Engineering & Systems</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
     <header class="navbar">
         <div class="logo">
-            <span class="logo-bracket">&lt;</span>Developer &amp; Engineer<span class="logo-bracket">/&gt;</span>
+            <span class="logo-bracket">&lt;</span>AI &amp; Drone Engineer<span class="logo-bracket">/&gt;</span>
         </div>
         <nav>
             <a href="#about">Über mich</a>
@@ -27,10 +27,10 @@
 
     <section class="hero">
         <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
-        <h1 class="hero-title">Embedded Systems, <span class="gradient-text">Künstliche Intelligenz</span> &amp; Drohnentechnik</h1>
+        <h1 class="hero-title">KI-Entwicklung, <span class="gradient-text">Drohnentechnik</span> &amp; Software-Systeme</h1>
         <p class="hero-sub">
-            Entwickler &amp; Nachwuchs-Ingenieur mit Fokus auf C++, Python, ArduPilot, FPV-Drohnenkonstruktion (Fusion 360) und KI-Anwendungen. 
-            Leistungen: Mathematik (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
+            Entwicklung von Drohnen-Algorithmen, Apps und Webseiten durch den gezielten Einsatz moderner KI-Systeme (Claude Code, Google Antigravity). 
+            Konstruktion eigener FPV-Drohnen (Fusion 360) &amp; ArduPilot. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
         </p>
         <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">Projekte öffnen ➔</a>
@@ -40,7 +40,7 @@
 
     <section id="projects" class="section">
         <h2 class="section-title">Projekte &amp; Entwicklungen</h2>
-        <p class="section-subtitle">Klicke auf ein Projekt, um Details, Hardware-Aufbau und Quellcode zu öffnen</p>
+        <p class="section-subtitle">Klicke auf ein Projekt, um Details und Umsetzungsschritte zu öffnen</p>
 
         <div class="project-grid">
             <div class="project-card featured">
@@ -48,12 +48,12 @@
                 <h3>🛸 FPV-Drohnen Konstruktion &amp; Avionik</h3>
                 <p>
                     Eigenständige Konstruktion von Frame-Komponenten (Baseplate, Arme, Kamera- &amp; Antennenhalterungen) in <strong>Autodesk Fusion 360</strong>. 
-                    Verkabelung, Löten der ESCs/Motoren und Kalibrierung der Flugsteuerung via <strong>ArduPilot / Flight Controller</strong> in C++.
+                    Verkabelung, Elektronik-Löten und Kalibrierung der Flugsteuerung via <strong>ArduPilot / Flight Controller</strong>.
                 </p>
                 <div class="tech-stack">
-                    <span>C++</span>
                     <span>Autodesk Fusion 360</span>
                     <span>ArduPilot</span>
+                    <span>Hardware-Löten</span>
                     <span>3D-Druck / STL</span>
                 </div>
                 <div class="card-actions">
@@ -62,18 +62,35 @@
             </div>
 
             <div class="project-card featured">
-                <div class="card-tag">Python &amp; Automation</div>
-                <h3>📁 EXIF Media Auto-Organizer</h3>
+                <div class="card-tag">KI &amp; Drohnen-Algorithmen</div>
+                <h3>🧠 KI-Algorithmen für Drohnensteuerung</h3>
                 <p>
-                    Hochleistungs-Python-Skript zur automatischen Analyse von TIFF/EXIF-Metadaten aus Sony RAW-Dateien (.ARW) und 4K-Videos (.MP4/XML). Automatische Sortierung in zeitbasierte Ordnerstrukturen.
+                    Konzeption und Erstellung von KI-unterstützten Algorithmen und Steuerungslogiken für autonome Systeme. Entwickelt unter Einsatz moderner KI-Agentensysteme (Claude Code &amp; Antigravity).
                 </p>
                 <div class="tech-stack">
-                    <span>Python 3</span>
-                    <span>EXIF / TIFF Parsing</span>
-                    <span>File System Automation</span>
+                    <span>KI-Prompt Engineering</span>
+                    <span>Claude Code</span>
+                    <span>Google Antigravity</span>
+                    <span>Drohnen-Logik</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('exif')">🐍 Python Script Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('drone_ai')">🤖 KI-Details öffnen</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-tag">KI-Webentwicklung</div>
+                <h3>🌐 KI-gestützte Webseiten &amp; Apps (10+ Projekte)</h3>
+                <p>
+                    Entwicklung von über 10 interaktiven Webseiten und App-Projekten. Effiziente Umsetzung komplexer Benutzeroberflächen und Datenlogik durch den gezielten Einsatz von KI-Tools.
+                </p>
+                <div class="tech-stack">
+                    <span>KI-Entwicklung</span>
+                    <span>Web &amp; App Architecture</span>
+                    <span>UI / UX Design</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('web_apps')">💻 Web- &amp; App-Details öffnen</button>
                 </div>
             </div>
 
@@ -81,107 +98,61 @@
                 <div class="card-tag">IoT &amp; Sensorik</div>
                 <h3>🌱 Intelligentes Gewächshaus (Arduino)</h3>
                 <p>
-                    Automatisierte Umgebungssteuerung auf Arduino-Basis in C/C++. Erfassung von Temperatur- und Bodenfeuchtigkeitswerten mit automatisierter Bewässerung und Statussteuerung.
+                    Automatisierte Umgebungssteuerung auf Arduino-Basis als Schulprojekt. Erfassung von Temperatur- und Bodenfeuchtigkeitswerten mit automatisierter Bewässerung und Statussteuerung.
                 </p>
                 <div class="tech-stack">
-                    <span>C / C++</span>
                     <span>Arduino IDE</span>
                     <span>Sensorik &amp; Aktorik</span>
+                    <span>Schaltkreise</span>
                     <span>IoT</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('greenhouse')">🌱 Schaltplan &amp; Details öffnen</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-tag">KI &amp; Automation</div>
-                <h3>📝 Notenkorrigierer (EdTech AI Engine)</h3>
-                <p>
-                    Anwendung zur KI-unterstützten Auswertung und Korrektur von Prüfungen. Bild-Upload von Handgeschriebenem via OCR-Texterkennung und KI-Feedbackgenerierung.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>OCR &amp; AI Prompting</span>
-                    <span>Datenverarbeitung</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 App-Details öffnen</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-tag">KI App Konzepte</div>
-                <h3>⚡ PulseAI Platform</h3>
-                <p>
-                    Konzept &amp; Entwicklung von KI-gestützter Anwendung für intelligentes Aktivitäts-Tracking und KI-unterstützte Datenanalyse.
-                </p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>AI Integration</span>
-                    <span>Data Processing</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('pulseai')">⚡ Projekt-Details öffnen</button>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-tag">Datenbank &amp; Architektur</div>
-                <h3>🥥 Comonut Platform</h3>
-                <p>
-                    Entwicklung von Datenbank-Architekturen (SQL Schema), Benutzerrollen, Auditor-Systemen und Logik für Community-Plattformen.
-                </p>
-                <div class="tech-stack">
-                    <span>SQL / Database</span>
-                    <span>Systemarchitektur</span>
-                    <span>Datenstruktur</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('comonut')">📱 Projekt-Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('greenhouse')">🌱 Details öffnen</button>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="section">
-        <h2 class="section-title">Skills &amp; Kompetenzen</h2>
+        <h2 class="section-title">Skills &amp; Arbeitsweise</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h4>💻 Programmiersprachen</h4>
+                <h4>🤖 KI-Entwicklung &amp; Tools</h4>
                 <ul>
-                    <li>C++</li>
-                    <li>Python</li>
+                    <li>Claude Code &amp; Google Antigravity</li>
+                    <li>KI-unterstützte Softwareerstellung</li>
+                    <li>System-Prompting &amp; KI-Algorithmen</li>
+                    <li>VS Code</li>
                 </ul>
             </div>
 
             <div class="skill-category">
-                <h4>🛸 Embedded &amp; Hardware</h4>
+                <h4>🛸 Drohnen &amp; Hardware</h4>
                 <ul>
-                    <li>Arduino (Arduino IDE)</li>
-                    <li>ArduPilot / Flight Controller</li>
                     <li>Autodesk Fusion 360 (CAD)</li>
-                    <li>Sensorik &amp; Löten</li>
+                    <li>FPV-Drohnenbau &amp; Löten</li>
+                    <li>ArduPilot / Flight Controller</li>
+                    <li>Arduino IDE &amp; Sensorik</li>
                 </ul>
             </div>
 
             <div class="skill-category">
-                <h4>🤖 KI &amp; Dev Tools</h4>
+                <h4>📐 Schulische Spitzenleistungen</h4>
                 <ul>
-                    <li>Claude Code / Google Antigravity</li>
-                    <li>VS Code / Git</li>
-                    <li>Linux &amp; Automation Scripts</li>
-                    <li>SQL &amp; Datenbanken</li>
+                    <li>Mathematik: 14 Punkte (Note 1)</li>
+                    <li>Physik: 14 Punkte (Note 1)</li>
+                    <li>Wirtschaftsinformatik: 13 Punkte</li>
+                    <li>Abitur Juli 2027 (KSE Ehingen)</li>
                 </ul>
             </div>
 
             <div class="skill-category">
-                <h4>🎬 Medien &amp; Schulische Noten</h4>
+                <h4>🎬 Medien &amp; Interessen</h4>
                 <ul>
                     <li>DaVinci Resolve Studio</li>
                     <li>FPV-Drohnennavigation</li>
-                    <li>Mathe (14 Pkt.) &amp; Physik (14 Pkt.)</li>
-                    <li>Wirtschaftsinformatik (13 Pkt.)</li>
+                    <li>Volleyball &amp; Fußball</li>
+                    <li>Mountainbiken</li>
                 </ul>
             </div>
         </div>
@@ -192,10 +163,10 @@
         <div class="about-card">
             <p>
                 Ich besuche das <strong>Kaufmännische Gymnasium Ehingen (KSE)</strong> nahe Ulm und schließe mein Abitur im <strong>Juli 2027</strong> ab. 
-                Meine absolute Leidenschaft liegt in der Verbindung von <strong>Hardware, Embedded Systems und künstlicher Intelligenz</strong> – von der CAD-Konstruktion eigener FPV-Drohnen bis hin zur Programmierung von Steuerungsskripten in C++ und Python.
+                Meine absolute Leidenschaft liegt in der Kombination von <strong>Drohnentechnik, Hardware und KI-Entwicklung</strong> – von der CAD-Konstruktion eigener FPV-Drohnen bis hin zum Bau von Webseiten, Apps und Drohnen-Algorithmen mit Hilfe moderner KI-Entwicklungstools (Claude Code, Google Antigravity).
             </p>
             <p>
-                Mein Ziel: Ein <strong>Duales Studium (Elektrotechnik / Embedded Systems / Informatik / KI) ab September 2027</strong> bei einem führenden High-Tech- und Rüstungsunternehmen.
+                Mein Ziel: Ein <strong>Duales Studium (Data Science &amp; KI / Informatik) ab September 2027</strong> bei einem führenden High-Tech- und Rüstungsunternehmen.
             </p>
         </div>
     </section>
