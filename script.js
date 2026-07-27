@@ -41,8 +41,8 @@ const projectData = {
         desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView (AI Schedule) und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
         images: [
-            { src: "images/personal_manager_timeline.png", caption: "PersonalManager Timeline & Stundenplan Schedule" },
-            { src: "images/personal_manager_profile.png", caption: "PersonalManager Profil, Streaks & Meilensteine" }
+            { src: "images/personal_manager_timeline.png?v=9999", caption: "PersonalManager Timeline & Stundenplan Schedule" },
+            { src: "images/personal_manager_profile.png?v=9999", caption: "PersonalManager Profil, Streaks & Meilensteine" }
         ],
         highlights: [
             "Entwickelt mit Google Antigravity für proaktive Zeitsteuerungslogik",
