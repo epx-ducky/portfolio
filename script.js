@@ -21,8 +21,8 @@ const projectData = {
         title: "🌱 1%-Methode App",
         tag: "iOS Habit & Focus Tracking App",
         vision: "💡 Meine Vision: Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – '1% at a time'. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.",
-        desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz). Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "Swift", "Xcode", "Graph & Analytics", "Habit Logic"],
+        desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Fortschritts-Graph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz). Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Swift", "Xcode", "Fortschritts-Analyse", "Habit Logic"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/1percent-method",
         images: [
             { src: "images/one_percent_main.png", caption: "1% Method Haupt-Dashboard & Gewohnheiten" },
@@ -33,15 +33,15 @@ const projectData = {
             "Entwickelt mit Google Antigravity zur strukturierten Gewohnheitsmodellierung",
             "Tages-Impact Dashboard (-0.7% bis +6.2% Zuwachs-Berechnung)",
             "Attribut-System: Gesundheit, Sportlichkeit, Disziplin, Finanzen, Intelligenz",
-            "Zinseszins-Verlaufsgraph & Bildschirmzeit-Verwaltung"
+            "Fortschritts-Graph & Bildschirmzeit-Verwaltung"
         ]
     },
     personal_manager: {
         title: "📊 PersonalManager App",
         tag: "iOS & Productivity Management",
         vision: "💡 Meine Vision: Proaktive Zeit- & Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.",
-        desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView (AI Schedule) und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
+        desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält ein übersichtliches Dashboard, Aufgabenlisten, eine KI-gestützte Stundenplan-Ansicht und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Swift / SwiftUI", "Xcode", "Stundenplan-Logik", "ScreenTime Manager"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/personalmanager",
         images: [
             { src: "images/personal_manager_timeline.png", caption: "PersonalManager Timeline & Stundenplan Schedule" },
@@ -49,7 +49,7 @@ const projectData = {
         ],
         highlights: [
             "Entwickelt mit Google Antigravity für proaktive Zeitsteuerungslogik",
-            "Proaktive Zeitleiste / Stundenplan (TimelineView & AI Schedule)",
+            "Übersichtlicher Stundenplan (KI-gestützte Ansicht)",
             "Profil-Gamification: Streaks, Level-Fortschritt & Meilensteine",
             "Aufgaben- und ScreenTime-Verwaltung in Swift"
         ]
@@ -57,15 +57,15 @@ const projectData = {
     notenkorrigierer: {
         title: "📝 Notenkorrigierer (EdTech AI Engine)",
         tag: "Next.js Web Application & KI Engine",
-        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und KI-Feedback.",
-        desc: "Entwicklung einer Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Engine"],
+        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte Texterkennung handschriftlicher Arbeiten (per Foto) und direktes KI-Feedback.",
+        desc: "Entwicklung einer Web-Anwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger Foto-Upload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Next.js", "TypeScript", "Texterkennung (Foto)", "AI Engine"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere/webapp",
         images: [],
         highlights: [
             "KI-Webanwendung (Next.js / TypeScript / SQL)",
             "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
-            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
+            "Mehrseitiger Foto-Upload zur Erkennung handschriftlicher Arbeiten",
             "Agenten-Denkschritte & PDF-Druckversion für Lehrkräfte"
         ]
     },
@@ -87,8 +87,8 @@ const projectData = {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
         vision: "💡 Meine Vision: Kontrolle und Flugstabilität durch eigene 3D-CAD-Framekonstruktion in Fusion 360 und kalibrierte ArduPilot-Avionik.",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot (Google Antigravity Assistenz bei der Elektronik).",
+        tech: ["ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL", "AGY (Elektronik)"],
         github: "https://github.com/epx-ducky/portfolio",
         images: [
             { src: "images/fpv_drone_cad_1.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Vorderansicht)" },
@@ -96,7 +96,7 @@ const projectData = {
             { src: "images/fpv_drone_cad_3.png", caption: "Autodesk Fusion 360 - FPV Long Range Carbon Frame" }
         ],
         highlights: [
-            "Konzipiert & strukturiert mit Google Antigravity",
+            "Eigenständige Konzeption & Strukturierung",
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
             "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
@@ -105,21 +105,21 @@ const projectData = {
     trading_bot: {
         title: "📈 Autonomous Algorithmic AI Trading System",
         tag: "Python, AI & Brokerage API",
-        vision: "💡 Meine Vision: Emotionen aus dem Trading eliminieren. Ein vollautomatisiertes, sich selbst optimierendes System, das Finanzdaten, News-Sentiment und US-Kongress-Transaktionen in Echtzeit analysiert und mathematisch fundierte Entscheidungen trifft.",
-        desc: "Entwicklung und Implementierung eines vollautomatisierten Algorithmic-Trading-Systems in Python zur Echtzeit-Analyse alternativer Finanzdaten und autonomen Handelsausführung via Brokerage-APIs (Alpaca). Entwickelt mit Google Antigravity.",
-        tech: ["Python", "Google Antigravity", "Alpaca API", "VADER / Gemini API (NLP)", "macOS LaunchAgents", "Cron"],
+        vision: "💡 Meine Vision: Emotionen aus dem Trading eliminieren. Ein vollautomatisiertes, lernendes System, das Finanzdaten, News und US-Kongress-Transaktionen in Echtzeit analysiert und logisch fundierte Entscheidungen trifft.",
+        desc: "Entwicklung und Implementierung eines vollautomatisierten Trading-Systems in Python zur Echtzeit-Analyse von Finanzdaten und autonomen Handelsausführung. Entwickelt mit Google Antigravity.",
+        tech: ["Python", "Google Antigravity", "Alpaca API", "Textanalyse (Gemini API)", "Automatisierung (Cron)"],
         github: "",
         images: [
-            { src: "images/trading_bot_discord_1.png", caption: "Discord Webhook: KI-Strategieoptimierung & Stop-Loss Updates" },
+            { src: "images/trading_bot_discord_1.png", caption: "Discord: KI-Strategieanpassung & Updates" },
             { src: "images/trading_bot_alpaca.png", caption: "Alpaca Trading Dashboard: Live-Positionen & Portfolio Balance" },
-            { src: "images/trading_bot_discord_2.png", caption: "Discord Webhook: Sell Alerts & Trailing Stop-Loss Anpassungen" }
+            { src: "images/trading_bot_discord_2.png", caption: "Discord: Verkaufs-Benachrichtigungen & Absicherungen" }
         ],
         highlights: [
-            "NLP & Sentiment-Analyse: Automatische Auswertung von Finanznachrichten mittels VADER & Gemini API",
-            "Alternative Data Processing: Automatisches Scraping von US-Kongress-Transaktionen (Pelosi-Copy-Trading) und Regierungsaufträgen",
-            "AutoML Loop: Tägliche Post-Trade-Analyse zur Identifikation von Verlustursachen und autonomen Anpassung von Risikoparametern",
-            "Dynamic Risk Management: High-Water Mark Trailing Profit Locks zur Absicherung von Buchgewinnen",
-            "Automated Pipeline: Vollautomatischer 24/7-Betrieb mit Echtzeit-Telemetry via Discord-Webhooks"
+            "Textanalyse von Finanznachrichten mittels KI (Gemini API)",
+            "Datenanalyse: Automatisches Scraping von US-Kongress-Transaktionen und Regierungsaufträgen",
+            "Automatisches Lernen: Tägliche Analyse zur Identifikation von Verlustursachen und Anpassung der Parameter",
+            "Risiko-Management: Automatische Gewinnabsicherung",
+            "Vollautomatischer 24/7-Betrieb mit Echtzeit-Benachrichtigungen via Discord"
         ]
     }
 };
