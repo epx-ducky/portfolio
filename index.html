@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260727_v100">
+    <link rel="stylesheet" href="style.css?v=20260727_v101">
     <style>
         /* Force Monochrome Dark Mode Inline Overrides */
         body {
@@ -155,7 +155,35 @@
                 </div>
             </div>
 
-            <!-- 3. FPV Drones -->
+            <!-- 3. PersonalManager (With real screenshots) -->
+            <div class="project-card featured">
+                <div class="card-tag">iOS &amp; Productivity Management</div>
+                <h3>📊 PersonalManager App</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Proaktive Zeit- &amp; Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.
+                </div>
+                <p>
+                    Native iOS-Anwendung für persönliches Aufgaben- &amp; Fokus-Management. Entwickelt in SwiftUI mit DashboardView, TaskListView, ProactiveTimelineView (Stundenplan-Schedule) und ScreenTime-Verwaltung.
+                </p>
+
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/personal_manager_timeline.png" alt="PersonalManager Timeline / AI Schedule" onclick="openImageModal(this.src, 'PersonalManager Timeline / AI Schedule'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/personal_manager_profile.png" alt="PersonalManager Profil & Streaks" onclick="openImageModal(this.src, 'PersonalManager Profil & Streaks'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                </div>
+
+                <div class="tech-stack">
+                    <span>Swift / SwiftUI</span>
+                    <span>Timeline Logic</span>
+                    <span>ScreenTime Manager</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details &amp; Screenshots öffnen</button>
+                </div>
+            </div>
+
+            <!-- 4. FPV Drones -->
             <div class="project-card">
                 <div class="card-tag">Hardware, CAD &amp; Avionik</div>
                 <h3>🛸 FPV-Drohnen Konstruktion &amp; Flug-Programmierung</h3>
@@ -173,26 +201,6 @@
                 </div>
                 <div class="card-actions">
                     <button class="btn-card" onclick="openModal('fpv')">🔍 CAD-Details &amp; Aufbau öffnen</button>
-                </div>
-            </div>
-
-            <!-- 4. PersonalManager -->
-            <div class="project-card">
-                <div class="card-tag">iOS &amp; Productivity Management</div>
-                <h3>📊 PersonalManager App</h3>
-                <div class="vision-box">
-                    <strong>💡 Die Vision:</strong> Proaktive Zeit- &amp; Fokussteuerung für den Alltag, um unnötige Bildschirmzeit zu reduzieren und Aufgaben mit einer klaren Zeitleiste strukturiert abzuarbeiten.
-                </div>
-                <p>
-                    Native iOS-Anwendung für persönliches Aufgaben- &amp; Fokus-Management. Entwickelt in SwiftUI mit DashboardView, TaskListView, ProactiveTimelineView und ScreenTime-Verwaltung.
-                </p>
-                <div class="tech-stack">
-                    <span>Swift / SwiftUI</span>
-                    <span>Timeline Logic</span>
-                    <span>ScreenTime Manager</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details öffnen</button>
                 </div>
             </div>
 
@@ -327,6 +335,6 @@
         <p>&copy; 2026 Jakob Kamm | Developer &amp; Drone Engineer Portfolio</p>
     </footer>
 
-    <script src="script.js?v=20260727_v100"></script>
+    <script src="script.js?v=20260727_v101"></script>
 </body>
 </html>

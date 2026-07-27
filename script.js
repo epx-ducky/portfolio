@@ -34,6 +34,23 @@ const projectData = {
             "Strukturierte Gewohnheitsliste mit Level-System"
         ]
     },
+    personal_manager: {
+        title: "📊 PersonalManager App",
+        tag: "iOS & Productivity Management",
+        vision: "💡 Meine Vision: Proaktive Zeit- & Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.",
+        desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView (AI Schedule) und ScreenTime-Verwaltung.",
+        tech: ["Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
+        images: [
+            { src: "images/personal_manager_timeline.png", caption: "PersonalManager Timeline & Stundenplan Schedule" },
+            { src: "images/personal_manager_profile.png", caption: "PersonalManager Profil, Streaks & Meilensteine" }
+        ],
+        highlights: [
+            "Proaktive Zeitleiste / Stundenplan (TimelineView & AI Schedule)",
+            "Profil-Gamification: Streaks, Level-Fortschritt & Meilensteine",
+            "Aufgaben- und ScreenTime-Verwaltung in Swift",
+            "Saubere Datenmodellierung (DataModels.swift)"
+        ]
+    },
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
@@ -45,19 +62,6 @@ const projectData = {
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
             "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
-        ]
-    },
-    personal_manager: {
-        title: "📊 PersonalManager App",
-        tag: "iOS & Productivity Management",
-        vision: "💡 Meine Vision: Proaktive Zeit- & Fokussteuerung für den Alltag, um unnötige Bildschirmzeit zu reduzieren und Aufgaben mit einer klaren Zeitleiste strukturiert abzuarbeiten.",
-        desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView und ScreenTime-Verwaltung.",
-        tech: ["Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
-        images: [],
-        highlights: [
-            "Proaktive Zeitleiste und Dashboard-Visualisierung",
-            "Aufgaben- und ScreenTime-Verwaltung in Swift",
-            "Saubere Datenmodellierung (DataModels.swift)"
         ]
     },
     grady: {
