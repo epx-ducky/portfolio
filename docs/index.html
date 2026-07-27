@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakob Kamm | Portfolio - Drohnen-Engineering, KI & Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260727_v9999">
+    <style>
+        /* Force Monochrome Dark Mode Inline Overrides */
+        body {
+            background-color: #070709 !important;
+            color: #fcfcfc !important;
+            font-family: 'Outfit', -apple-system, sans-serif !important;
+        }
+        .bg-glow, .glow-1, .glow-2 { display: none !important; }
+        .hero-title span { color: #ffffff !important; text-decoration: underline !important; }
+        .project-card {
+            background: #111114 !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #fcfcfc !important;
+        }
+        .vision-box {
+            background: rgba(255, 255, 255, 0.04) !important;
+            border-left: 3px solid #ffffff !important;
+            padding: 0.9rem 1.1rem !important;
+            border-radius: 8px !important;
+            margin: 1rem 0 1.5rem 0 !important;
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+            color: #f4f4f5 !important;
+        }
+        .app-screenshot-grid {
+            display: flex !important;
+            gap: 0.8rem !important;
+            margin: 1.2rem 0 !important;
+            overflow-x: auto !important;
+            background: #000000 !important;
+            padding: 0.8rem !important;
+            border-radius: 12px !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        }
+        .app-screenshot-grid img {
+            height: 220px !important;
+            border-radius: 8px !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            object-fit: contain !important;
+            cursor: pointer !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+        .app-screenshot-grid img:hover {
+            transform: scale(1.04) !important;
+            border-color: #ffffff !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-bracket">&lt;</span>Developer &amp; Engineer<span class="logo-bracket">/&gt;</span>
+        </div>
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#projects">Projekte &amp; Visionen</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-btn">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
+        <h1 class="hero-title">Drohnen-Programmierung, <span class="monochrome-highlight">KI-Entwicklung</span> &amp; Systems</h1>
+        <p class="hero-sub">
+            Konstruktion eigener FPV-Drohnen in Autodesk Fusion 360 &amp; ArduPilot. Entwickler nativer Apps &amp; Plattformen (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer) entwickelt mit <strong>Google Antigravity</strong>. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Echte Projekte &amp; Screenshots ansehen ➔</a>
+            <a href="#about" class="btn btn-secondary">Profil &amp; Noten</a>
+        </div>
+    </section>
+
+    <!-- Main Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Echte Projekte &amp; App-Screenshots</h2>
+            <p class="section-subtitle">🔍 Klicke auf ein beliebiges Bild, um es in voller Größe zu vergrößern</p>
+        </div>
+
+        <div class="project-grid">
+            
+            <!-- 1. Comonut App -->
+            <div class="project-card featured">
+                <div class="card-tag">iOS Native &amp; Community App</div>
+                <h3>🥥 Comonut App Platform</h3>
+                
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.
+                </div>
+
+                <p>
+                    Vollwertige Community- und Event-Plattform für iOS. Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.
+                </p>
+
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/comonut_feed.png?v=9999" alt="Comonut Feed Erbach" onclick="openImageModal(this.src, 'Comonut Feed Erbach'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/comonut_activities.png?v=9999" alt="Comonut Aktivitäten & Turniere" onclick="openImageModal(this.src, 'Comonut Aktivitäten & Turniere'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                </div>
+
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Swift / Xcode</span>
+                    <span>SQL Database</span>
+                    <span>System-Architektur</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('comonut')">📱 Projekt-Details &amp; Code öffnen</button>
+                </div>
+            </div>
+
+            <!-- 2. 1% Method App -->
+            <div class="project-card featured">
+                <div class="card-tag">iOS Habit &amp; Focus App</div>
+                <h3>🌱 1%-Methode App</h3>
+                
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – „1% at a time“. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.
+                </div>
+
+                <p>
+                    Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts (-0.7% bis +6.2%), Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System. Entwickelt mit Google Antigravity.
+                </p>
+
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/one_percent_main.png?v=9999" alt="1% Method Dashboard" onclick="openImageModal(this.src, '1% Method Dashboard'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/one_percent_stats.png?v=9999" alt="1% Method Attribute" onclick="openImageModal(this.src, '1% Method Attribute'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/one_percent_graph.png?v=9999" alt="1% Method Zinseszins Chart" onclick="openImageModal(this.src, '1% Method Zinseszins Chart'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                </div>
+
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Swift / Xcode</span>
+                    <span>Database Architecture</span>
+                    <span>Graph &amp; Analytics</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('one_percent')">📊 Projekt-Details &amp; Code öffnen</button>
+                </div>
+            </div>
+
+            <!-- 3. PersonalManager -->
+            <div class="project-card featured">
+                <div class="card-tag">iOS &amp; Productivity Management</div>
+                <h3>📊 PersonalManager App</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Proaktive Zeit- &amp; Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.
+                </div>
+                <p>
+                    Native iOS-Anwendung für persönliches Aufgaben- &amp; Fokus-Management. Entwickelt in SwiftUI mit DashboardView, TaskListView, ProactiveTimelineView (Stundenplan-Schedule) und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.
+                </p>
+
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/personal_manager_timeline.png?v=9999" alt="PersonalManager Timeline / AI Schedule" onclick="openImageModal(this.src, 'PersonalManager Timeline / AI Schedule'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/personal_manager_profile.png?v=9999" alt="PersonalManager Profil & Streaks" onclick="openImageModal(this.src, 'PersonalManager Profil & Streaks'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                </div>
+
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Swift / SwiftUI</span>
+                    <span>Timeline Logic</span>
+                    <span>ScreenTime Manager</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details &amp; Screenshots öffnen</button>
+                </div>
+            </div>
+
+            <!-- 4. FPV Drones -->
+            <div class="project-card">
+                <div class="card-tag">Hardware, CAD &amp; Avionik</div>
+                <h3>🛸 FPV-Drohnen Konstruktion &amp; Flug-Programmierung</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision:</strong> Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und exakt kalibrierte ArduPilot-Avionik.
+                </div>
+                <p>
+                    Eigenständige 3D-Konstruktion von Frame-Komponenten in <strong>Autodesk Fusion 360</strong> (Baseplate, Arme, Top Plate, Kamera- &amp; Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via <strong>ArduPilot</strong> für stabilen Flug. Entwickelt &amp; konzipiert mit Google Antigravity.
+                </p>
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>ArduPilot</span>
+                    <span>Autodesk Fusion 360</span>
+                    <span>Hardware-Löten</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('fpv')">🔍 CAD-Details &amp; Aufbau öffnen</button>
+                </div>
+            </div>
+
+            <!-- 5. Grady App -->
+            <div class="project-card">
+                <div class="card-tag">KI-Entwicklung &amp; Education</div>
+                <h3>🎓 Grady App</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision:</strong> Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.
+                </div>
+                <p>
+                    Intelligente Schul- &amp; Lernanwendung. Entwickelt mit Google Antigravity zur Unterstützung von Schülern beim Lernen und Notenmanagement.
+                </p>
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Claude Code</span>
+                    <span>App Architecture</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('grady')">🎓 Grady Details öffnen</button>
+                </div>
+            </div>
+
+            <!-- 6. Notenkorrigierer -->
+            <div class="project-card">
+                <div class="card-tag">EdTech AI Engine</div>
+                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision:</strong> Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.
+                </div>
+                <p>
+                    Webanwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.
+                </p>
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>OCR &amp; AI Prompting</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 Details öffnen</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Skills &amp; Arbeitsweise</h2>
+            <p class="section-subtitle">Praktische Fertigkeiten, Schulische Noten und Entwicklungswerkzeuge</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>🤖 KI &amp; Softwareentwicklung</h4>
+                <ul>
+                    <li>Google Antigravity (AGY)</li>
+                    <li>Claude Code</li>
+                    <li>KI-gestützte App- &amp; Webentwicklung</li>
+                    <li>Entwicklung von Grady, Comonut, PersonalManager, 1%-Methode</li>
+                    <li>C++ &amp; Python</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>🛸 Drohnen &amp; Hardware</h4>
+                <ul>
+                    <li>Autodesk Fusion 360 (CAD)</li>
+                    <li>FPV-Drohnenbau &amp; Elektronik-Löten</li>
+                    <li>ArduPilot Flugsteuerung &amp; Programmierung</li>
+                    <li>Arduino IDE &amp; Sensorik</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>📐 Schulische Spitzenleistungen</h4>
+                <ul>
+                    <li>Mathematik: 14 Punkte (Note 1)</li>
+                    <li>Physik: 14 Punkte (Note 1)</li>
+                    <li>Wirtschaftsinformatik: 13 Punkte</li>
+                    <li>Abitur Juli 2027 (KSE Ehingen)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>🎬 Medien &amp; Interessen</h4>
+                <ul>
+                    <li>DaVinci Resolve Studio (Schnitt &amp; Color Grading)</li>
+                    <li>FPV-Drohnennavigation</li>
+                    <li>Volleyball &amp; Fußball</li>
+                    <li>Mountainbiken</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-header">
+            <h2 class="section-title">Über mich &amp; Meine Motivation</h2>
+        </div>
+        <div class="about-card">
+            <p>
+                Ich besuche das <strong>Kaufmännische Gymnasium Ehingen (KSE)</strong> nahe Ulm und schließe mein Abitur im <strong>Juli 2027</strong> ab. 
+                Meine Motivation: Echte Probleme in der Praxis zu erkennen und mit <strong>Google Antigravity, Drohnentechnik, Hardware und KI-gestützter Softwareentwicklung</strong> konkrete Lösungen zu bauen – von der 3D-CAD-Konstruktion eigener FPV-Drohnen bis hin zu nützlichen Apps (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer).
+            </p>
+            <p>
+                Mein Ziel: Ein <strong>Duales Studium (Data Science &amp; KI / Informatik / Elektrotechnik) ab September 2027</strong> bei einem führenden High-Tech- und Rüstungsunternehmen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modal Popup for Project Details -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Fullscreen High-Res Image Lightbox Modal -->
+    <div id="image-modal-overlay" class="image-modal-overlay" onclick="closeImageModal()">
+        <div class="image-modal-content" onclick="event.stopPropagation()">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="image-modal-img" src="" alt="Screenshot Großansicht">
+            <div id="image-modal-caption" class="image-modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Jakob Kamm | Developer &amp; Drone Engineer Portfolio</p>
+    </footer>
+
+    <script src="script.js?v=20260727_v9999"></script>
+</body>
+</html>

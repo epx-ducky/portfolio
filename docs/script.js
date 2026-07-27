@@ -1,0 +1,169 @@
+const projectData = {
+    comonut: {
+        title: "🥥 Comonut App Platform",
+        tag: "iOS Native App & Community Plattform",
+        vision: "💡 Meine Vision: Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.",
+        desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
+        images: [
+            { src: "images/comonut_feed.png", caption: "Comonut Feed & Gemeinde News Erbach" },
+            { src: "images/comonut_activities.png", caption: "Comonut Aktivitäten & Turniere Erbach" }
+        ],
+        highlights: [
+            "Entwickelt mit Google Antigravity für effiziente System-Architektur",
+            "Echtes App-Interface: Gemeinde-News, Müllkalender & Bürgerumfragen",
+            "Aktivitäten & Sportstätten-Buchung (Beachvolleyball, Kunst-Fußballplatz, Jahnhalle)",
+            "Eigenes Datenbankschema (schema.sql) mit Rechteverwaltung & Rollensystem"
+        ]
+    },
+    one_percent: {
+        title: "🌱 1%-Methode App",
+        tag: "iOS Habit & Focus Tracking App",
+        vision: "💡 Meine Vision: Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – '1% at a time'. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.",
+        desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz). Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Swift", "Xcode", "Graph & Analytics", "Habit Logic"],
+        images: [
+            { src: "images/one_percent_main.png", caption: "1% Method Haupt-Dashboard & Gewohnheiten" },
+            { src: "images/one_percent_stats.png", caption: "1% Method Leistungsstatistik & Attribute" },
+            { src: "images/one_percent_graph.png", caption: "1% Method Zinseszins Verlaufsgraph" }
+        ],
+        highlights: [
+            "Entwickelt mit Google Antigravity zur strukturierten Gewohnheitsmodellierung",
+            "Tages-Impact Dashboard (-0.7% bis +6.2% Zuwachs-Berechnung)",
+            "Attribut-System: Gesundheit, Sportlichkeit, Disziplin, Finanzen, Intelligenz",
+            "Zinseszins-Verlaufsgraph & Bildschirmzeit-Verwaltung"
+        ]
+    },
+    personal_manager: {
+        title: "📊 PersonalManager App",
+        tag: "iOS & Productivity Management",
+        vision: "💡 Meine Vision: Proaktive Zeit- & Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.",
+        desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView (AI Schedule) und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
+        images: [
+            { src: "images/personal_manager_timeline.png?v=9999", caption: "PersonalManager Timeline & Stundenplan Schedule" },
+            { src: "images/personal_manager_profile.png?v=9999", caption: "PersonalManager Profil, Streaks & Meilensteine" }
+        ],
+        highlights: [
+            "Entwickelt mit Google Antigravity für proaktive Zeitsteuerungslogik",
+            "Proaktive Zeitleiste / Stundenplan (TimelineView & AI Schedule)",
+            "Profil-Gamification: Streaks, Level-Fortschritt & Meilensteine",
+            "Aufgaben- und ScreenTime-Verwaltung in Swift"
+        ]
+    },
+    fpv: {
+        title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
+        tag: "Hardware, CAD & ArduPilot",
+        vision: "💡 Meine Vision: Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und präzise kalibrierte ArduPilot-Avionik.",
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
+        images: [],
+        highlights: [
+            "Konzipiert & strukturiert mit Google Antigravity",
+            "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
+            "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
+            "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
+        ]
+    },
+    grady: {
+        title: "🎓 Grady App",
+        tag: "KI-gestützte Schul- & Lernanwendung",
+        vision: "💡 Meine Vision: Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.",
+        desc: "Konzeption und Entwicklung der Grady App zur Unterstützung von Schülern beim Lernen und Notenmanagement. Umgesetzt unter Einsatz von Google Antigravity & Claude Code.",
+        tech: ["Google Antigravity", "Claude Code", "KI-Entwicklung", "App Architecture"],
+        images: [],
+        highlights: [
+            "Entwickelt mit Google Antigravity & Claude Code",
+            "Intelligente Notenverwaltung und Lernunterstützung für Schüler",
+            "Effiziente Entwicklung durch KI-unterstützte Softwareerstellung"
+        ]
+    },
+    notenkorrigierer: {
+        title: "📝 Notenkorrigierer (EdTech AI Engine)",
+        tag: "Next.js Web App & KI OCR-Korrektur",
+        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
+        desc: "Entwicklung einer Web-Anwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Prompting"],
+        images: [],
+        highlights: [
+            "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
+            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
+            "Agenten-Denkschritte für präzises, nachvollziehbares Feedback"
+        ]
+    }
+};
+
+function openModal(projectId) {
+    const data = projectData[projectId];
+    if (!data) return;
+
+    const modalBody = document.getElementById('modal-body');
+    
+    let galleryHtml = '';
+    if (data.images && data.images.length > 0) {
+        galleryHtml = `
+            <div class="modal-gallery">
+                ${data.images.map(img => `<img src="${img.src}" alt="${img.caption}" onclick="openImageModal('${img.src}', '${img.caption}'); event.stopPropagation();" title="Klicken für Großansicht" loading="lazy">`).join('')}
+            </div>
+        `;
+    }
+
+    let visionHtml = '';
+    if (data.vision) {
+        visionHtml = `
+            <div class="modal-vision">
+                ${data.vision}
+            </div>
+        `;
+    }
+
+    modalBody.innerHTML = `
+        <div class="modal-badge">${data.tag}</div>
+        <h2 class="modal-title">${data.title}</h2>
+        
+        ${visionHtml}
+        
+        <p class="modal-desc">${data.desc}</p>
+        
+        <h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>
+        ${galleryHtml}
+
+        <h4 style="color: #ffffff; margin-top: 1.5rem; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
+        <ul class="modal-list">
+            ${data.highlights.map(h => `<li>✨ ${h}</li>`).join('')}
+        </ul>
+
+        <h4 style="color: #a1a1aa; margin-bottom: 0.6rem; font-size: 0.85rem; text-transform: uppercase;">🛠️ Verwendete Technologien:</h4>
+        <div class="tech-stack">
+            ${data.tech.map(t => `<span>${t}</span>`).join('')}
+        </div>
+    `;
+
+    document.getElementById('modal-overlay').classList.add('active');
+}
+
+function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('active');
+}
+
+/* Fullscreen High-Res Image Lightbox Modal */
+function openImageModal(imgSrc, captionText) {
+    const modalImg = document.getElementById('image-modal-img');
+    const modalCaption = document.getElementById('image-modal-caption');
+    const modalOverlay = document.getElementById('image-modal-overlay');
+
+    modalImg.src = imgSrc;
+    modalCaption.innerText = captionText || 'Screenshot Großansicht';
+    modalOverlay.classList.add('active');
+}
+
+function closeImageModal() {
+    document.getElementById('image-modal-overlay').classList.remove('active');
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModal();
+        closeImageModal();
+    }
+});
