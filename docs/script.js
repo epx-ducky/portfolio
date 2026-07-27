@@ -60,7 +60,7 @@ const projectData = {
         vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
         desc: "Entwicklung einer vollständigen Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Engine"],
-        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere",
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere/webapp",
         images: [],
         highlights: [
             "Vollständige KI-Webanwendung (Next.js / TypeScript / SQL)",
