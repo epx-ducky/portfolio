@@ -101,6 +101,26 @@ const projectData = {
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
             "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
         ]
+    },
+    trading_bot: {
+        title: "📈 Autonomous Algorithmic AI Trading System",
+        tag: "Python, AI & Brokerage API",
+        vision: "💡 Meine Vision: Emotionen aus dem Trading eliminieren. Ein vollautomatisiertes, sich selbst optimierendes System, das Finanzdaten, News-Sentiment und US-Kongress-Transaktionen in Echtzeit analysiert und mathematisch fundierte Entscheidungen trifft.",
+        desc: "Entwicklung und Implementierung eines vollautomatisierten Algorithmic-Trading-Systems in Python zur Echtzeit-Analyse alternativer Finanzdaten und autonomen Handelsausführung via Brokerage-APIs (Alpaca). Entwickelt mit Google Antigravity.",
+        tech: ["Python", "Google Antigravity", "Alpaca API", "VADER / Gemini API (NLP)", "macOS LaunchAgents", "Cron"],
+        github: "",
+        images: [
+            { src: "images/trading_bot_discord_1.png", caption: "Discord Webhook: KI-Strategieoptimierung & Stop-Loss Updates" },
+            { src: "images/trading_bot_alpaca.png", caption: "Alpaca Trading Dashboard: Live-Positionen & Portfolio Balance" },
+            { src: "images/trading_bot_discord_2.png", caption: "Discord Webhook: Sell Alerts & Trailing Stop-Loss Anpassungen" }
+        ],
+        highlights: [
+            "NLP & Sentiment-Analyse: Automatische Auswertung von Finanznachrichten mittels VADER & Gemini API",
+            "Alternative Data Processing: Automatisches Scraping von US-Kongress-Transaktionen (Pelosi-Copy-Trading) und Regierungsaufträgen",
+            "AutoML Loop: Tägliche Post-Trade-Analyse zur Identifikation von Verlustursachen und autonomen Anpassung von Risikoparametern",
+            "Dynamic Risk Management: High-Water Mark Trailing Profit Locks zur Absicherung von Buchgewinnen",
+            "Automated Pipeline: Vollautomatischer 24/7-Betrieb mit Echtzeit-Telemetry via Discord-Webhooks"
+        ]
     }
 };
 
