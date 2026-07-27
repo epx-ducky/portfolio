@@ -5,6 +5,7 @@ const projectData = {
         vision: "💡 Meine Vision: Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.",
         desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/comonut",
         images: [
             { src: "images/comonut_feed.png", caption: "Comonut Feed & Gemeinde News Erbach" },
             { src: "images/comonut_activities.png", caption: "Comonut Aktivitäten & Turniere Erbach" }
@@ -22,6 +23,7 @@ const projectData = {
         vision: "💡 Meine Vision: Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – '1% at a time'. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.",
         desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz). Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift", "Xcode", "Graph & Analytics", "Habit Logic"],
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/1percent-method",
         images: [
             { src: "images/one_percent_main.png", caption: "1% Method Haupt-Dashboard & Gewohnheiten" },
             { src: "images/one_percent_stats.png", caption: "1% Method Leistungsstatistik & Attribute" },
@@ -40,9 +42,10 @@ const projectData = {
         vision: "💡 Meine Vision: Proaktive Zeit- & Fokussteuerung für den Schulalltag, um unnötige Bildschirmzeit zu reduzieren, den Stundenplan (Timeline) im Blick zu behalten und Erfolge via Gamification (Streaks, XP, Meilensteine) motivierend zu verfolgen.",
         desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView (AI Schedule) und ScreenTime-Verwaltung. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/personalmanager",
         images: [
-            { src: "images/personal_manager_timeline.png?v=9999", caption: "PersonalManager Timeline & Stundenplan Schedule" },
-            { src: "images/personal_manager_profile.png?v=9999", caption: "PersonalManager Profil, Streaks & Meilensteine" }
+            { src: "images/personal_manager_timeline.png", caption: "PersonalManager Timeline & Stundenplan Schedule" },
+            { src: "images/personal_manager_profile.png", caption: "PersonalManager Profil, Streaks & Meilensteine" }
         ],
         highlights: [
             "Entwickelt mit Google Antigravity für proaktive Zeitsteuerungslogik",
@@ -51,44 +54,48 @@ const projectData = {
             "Aufgaben- und ScreenTime-Verwaltung in Swift"
         ]
     },
+    notenkorrigierer: {
+        title: "📝 Notenkorrigierer (EdTech AI Engine)",
+        tag: "Next.js Web Application & KI Engine",
+        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
+        desc: "Entwicklung einer vollständigen Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
+        tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Engine"],
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere",
+        images: [],
+        highlights: [
+            "Vollständige KI-Webanwendung (Next.js / TypeScript / SQL)",
+            "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
+            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
+            "Agenten-Denkschritte & PDF-Druckversion für Lehrkräfte"
+        ]
+    },
+    grady: {
+        title: "🎓 Grady (KI-Lernsystem)",
+        tag: "KI-gestützte Web- & Lernanwendung",
+        vision: "💡 Meine Vision: Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.",
+        desc: "Konzeption und Entwicklung der Grady KI-Webapplikation zur Unterstützung von Schülern beim Lernen und Notenmanagement. Umgesetzt unter Einsatz von Google Antigravity & Claude Code.",
+        tech: ["Google Antigravity", "Claude Code", "KI-Entwicklung", "App Architecture"],
+        github: "https://github.com/epx-ducky/portfolio/tree/main/projects/grady",
+        images: [],
+        highlights: [
+            "Entwickelt mit Google Antigravity & Claude Code",
+            "Intelligente Notenverwaltung und Lernunterstützung für Schüler",
+            "Effiziente KI-Websystem-Architektur"
+        ]
+    },
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
         vision: "💡 Meine Vision: Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und präzise kalibrierte ArduPilot-Avionik.",
         desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
+        github: "https://github.com/epx-ducky/portfolio",
         images: [],
         highlights: [
             "Konzipiert & strukturiert mit Google Antigravity",
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
             "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
-        ]
-    },
-    grady: {
-        title: "🎓 Grady App",
-        tag: "KI-gestützte Schul- & Lernanwendung",
-        vision: "💡 Meine Vision: Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.",
-        desc: "Konzeption und Entwicklung der Grady App zur Unterstützung von Schülern beim Lernen und Notenmanagement. Umgesetzt unter Einsatz von Google Antigravity & Claude Code.",
-        tech: ["Google Antigravity", "Claude Code", "KI-Entwicklung", "App Architecture"],
-        images: [],
-        highlights: [
-            "Entwickelt mit Google Antigravity & Claude Code",
-            "Intelligente Notenverwaltung und Lernunterstützung für Schüler",
-            "Effiziente Entwicklung durch KI-unterstützte Softwareerstellung"
-        ]
-    },
-    notenkorrigierer: {
-        title: "📝 Notenkorrigierer (EdTech AI Engine)",
-        tag: "Next.js Web App & KI OCR-Korrektur",
-        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
-        desc: "Entwicklung einer Web-Anwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Prompting"],
-        images: [],
-        highlights: [
-            "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
-            "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
-            "Agenten-Denkschritte für präzises, nachvollziehbares Feedback"
         ]
     }
 };
@@ -117,6 +124,15 @@ function openModal(projectId) {
         `;
     }
 
+    let githubBtnHtml = '';
+    if (data.github) {
+        githubBtnHtml = `
+            <div style="margin-top: 1.5rem;">
+                <a href="${data.github}" target="_blank" class="btn-card btn-github" style="text-decoration: none; padding: 0.8rem 1.5rem; display: inline-flex; border-radius: 12px; font-weight: 600;">🔗 Quellcode &amp; Projektdateien auf GitHub inspizieren ➔</a>
+            </div>
+        `;
+    }
+
     modalBody.innerHTML = `
         <div class="modal-badge">${data.tag}</div>
         <h2 class="modal-title">${data.title}</h2>
@@ -125,8 +141,7 @@ function openModal(projectId) {
         
         <p class="modal-desc">${data.desc}</p>
         
-        <h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>
-        ${galleryHtml}
+        ${galleryHtml ? '<h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>' + galleryHtml : ''}
 
         <h4 style="color: #ffffff; margin-top: 1.5rem; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
         <ul class="modal-list">
@@ -137,6 +152,8 @@ function openModal(projectId) {
         <div class="tech-stack">
             ${data.tech.map(t => `<span>${t}</span>`).join('')}
         </div>
+
+        ${githubBtnHtml}
     `;
 
     document.getElementById('modal-overlay').classList.add('active');

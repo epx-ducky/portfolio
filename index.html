@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260727_v9999">
+    <link rel="stylesheet" href="style.css?v=20260727_v105">
     <style>
         /* Force Monochrome Dark Mode Inline Overrides */
         body {
@@ -54,6 +54,26 @@
             transform: scale(1.04) !important;
             border-color: #ffffff !important;
         }
+        .btn-group {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .btn-github {
+            background: rgba(255, 255, 255, 0.04) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: #e4e4e7 !important;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+        .btn-github:hover {
+            background: rgba(255, 255, 255, 0.15) !important;
+            border-color: #ffffff !important;
+            color: #ffffff !important;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +96,7 @@
         <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
         <h1 class="hero-title">Drohnen-Programmierung, <span class="monochrome-highlight">KI-Entwicklung</span> &amp; Systems</h1>
         <p class="hero-sub">
-            Konstruktion eigener FPV-Drohnen in Autodesk Fusion 360 &amp; ArduPilot. Entwickler nativer Apps &amp; Plattformen (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer) entwickelt mit <strong>Google Antigravity</strong>. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
+            Konstruktion eigener FPV-Drohnen in Autodesk Fusion 360 &amp; ArduPilot. Entwickler nativer Apps, KI-Webanwendungen &amp; Plattformen (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer) entwickelt mit <strong>Google Antigravity</strong>. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
         </p>
         <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">Echte Projekte &amp; Screenshots ansehen ➔</a>
@@ -88,7 +108,7 @@
     <section id="projects" class="section">
         <div class="section-header">
             <h2 class="section-title">Echte Projekte &amp; App-Screenshots</h2>
-            <p class="section-subtitle">🔍 Klicke auf ein beliebiges Bild, um es in voller Größe zu vergrößern</p>
+            <p class="section-subtitle">🔍 Klicke auf ein Bild zur Vollbild-Großansicht oder nutze die GitHub-Links zum Code-Inspektion</p>
         </div>
 
         <div class="project-grid">
@@ -119,8 +139,9 @@
                     <span>SQL Database</span>
                     <span>System-Architektur</span>
                 </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('comonut')">📱 Projekt-Details &amp; Code öffnen</button>
+                <div class="card-actions btn-group">
+                    <button class="btn-card" onclick="openModal('comonut')">📱 Details &amp; Fotos</button>
+                    <a href="https://github.com/epx-ducky/portfolio/tree/main/projects/comonut" target="_blank" class="btn-card btn-github">🔗 Code auf GitHub</a>
                 </div>
             </div>
 
@@ -151,8 +172,9 @@
                     <span>Database Architecture</span>
                     <span>Graph &amp; Analytics</span>
                 </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('one_percent')">📊 Projekt-Details &amp; Code öffnen</button>
+                <div class="card-actions btn-group">
+                    <button class="btn-card" onclick="openModal('one_percent')">📊 Details &amp; Fotos</button>
+                    <a href="https://github.com/epx-ducky/portfolio/tree/main/projects/1percent-method" target="_blank" class="btn-card btn-github">🔗 Code auf GitHub</a>
                 </div>
             </div>
 
@@ -180,12 +202,60 @@
                     <span>Timeline Logic</span>
                     <span>ScreenTime Manager</span>
                 </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details &amp; Screenshots öffnen</button>
+                <div class="card-actions btn-group">
+                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Details &amp; Fotos</button>
+                    <a href="https://github.com/epx-ducky/portfolio/tree/main/projects/personalmanager" target="_blank" class="btn-card btn-github">🔗 Code auf GitHub</a>
                 </div>
             </div>
 
-            <!-- 4. FPV Drones -->
+            <!-- 4. Notenkorrigierer (EdTech AI Engine) -->
+            <div class="project-card featured">
+                <div class="card-tag">Web Application &amp; KI Engine</div>
+                <h3>📝 Notenkorrigierer (EdTech AI Webapp)</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Zeitersparnis bei der Prüfungskorrektur für Lehrkräfte durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback in einer modernen Webanwendung.
+                </div>
+                <p>
+                    Vollwertige KI-Webanwendung (Next.js / TypeScript). Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung, PDF-Druckversion und SQL-Datenbankschema. Entwickelt mit Google Antigravity.
+                </p>
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>Multi-Page OCR</span>
+                    <span>AI Engine</span>
+                </div>
+                <div class="card-actions btn-group">
+                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 Details &amp; Architektur</button>
+                    <a href="https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere" target="_blank" class="btn-card btn-github">🔗 Next.js Code auf GitHub</a>
+                </div>
+            </div>
+
+            <!-- 5. Grady App -->
+            <div class="project-card">
+                <div class="card-tag">KI-gestützte Web- &amp; Lernanwendung</div>
+                <h3>🎓 Grady (KI-Lernsystem)</h3>
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.
+                </div>
+                <p>
+                    Intelligente KI-Webapplikation zur Unterstützung von Schülern beim Lernen und Notenmanagement. Konzipiert &amp; entwickelt mit Google Antigravity &amp; Claude Code.
+                </p>
+                <div class="tech-stack">
+                    <span>Google Antigravity</span>
+                    <span>Claude Code</span>
+                    <span>KI-Entwicklung</span>
+                    <span>App Architecture</span>
+                </div>
+                <div class="card-actions btn-group">
+                    <button class="btn-card" onclick="openModal('grady')">🎓 Details &amp; Konzept</button>
+                    <a href="https://github.com/epx-ducky/portfolio/tree/main/projects/grady" target="_blank" class="btn-card btn-github">🔗 Dokus &amp; Code auf GitHub</a>
+                </div>
+            </div>
+
+            <!-- 6. FPV Drones -->
             <div class="project-card">
                 <div class="card-tag">Hardware, CAD &amp; Avionik</div>
                 <h3>🛸 FPV-Drohnen Konstruktion &amp; Flug-Programmierung</h3>
@@ -203,47 +273,6 @@
                 </div>
                 <div class="card-actions">
                     <button class="btn-card" onclick="openModal('fpv')">🔍 CAD-Details &amp; Aufbau öffnen</button>
-                </div>
-            </div>
-
-            <!-- 5. Grady App -->
-            <div class="project-card">
-                <div class="card-tag">KI-Entwicklung &amp; Education</div>
-                <h3>🎓 Grady App</h3>
-                <div class="vision-box">
-                    <strong>💡 Die Vision:</strong> Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.
-                </div>
-                <p>
-                    Intelligente Schul- &amp; Lernanwendung. Entwickelt mit Google Antigravity zur Unterstützung von Schülern beim Lernen und Notenmanagement.
-                </p>
-                <div class="tech-stack">
-                    <span>Google Antigravity</span>
-                    <span>Claude Code</span>
-                    <span>App Architecture</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('grady')">🎓 Grady Details öffnen</button>
-                </div>
-            </div>
-
-            <!-- 6. Notenkorrigierer -->
-            <div class="project-card">
-                <div class="card-tag">EdTech AI Engine</div>
-                <h3>📝 Notenkorrigierer (EdTech AI)</h3>
-                <div class="vision-box">
-                    <strong>💡 Die Vision:</strong> Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.
-                </div>
-                <p>
-                    Webanwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.
-                </p>
-                <div class="tech-stack">
-                    <span>Google Antigravity</span>
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>OCR &amp; AI Prompting</span>
-                </div>
-                <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('notenkorrigierer')">📄 Details öffnen</button>
                 </div>
             </div>
 
@@ -339,6 +368,6 @@
         <p>&copy; 2026 Jakob Kamm | Developer &amp; Drone Engineer Portfolio</p>
     </footer>
 
-    <script src="script.js?v=20260727_v9999"></script>
+    <script src="script.js?v=20260727_v105"></script>
 </body>
 </html>
