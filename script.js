@@ -3,7 +3,7 @@ const projectData = {
         title: "🥥 Comonut App Platform",
         tag: "iOS Native App & Community Plattform",
         vision: "💡 Meine Vision: Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.",
-        desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
+        desc: "Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/comonut",
         images: [
@@ -57,13 +57,13 @@ const projectData = {
     notenkorrigierer: {
         title: "📝 Notenkorrigierer (EdTech AI Engine)",
         tag: "Next.js Web Application & KI Engine",
-        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
-        desc: "Entwicklung einer vollständigen Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
+        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und KI-Feedback.",
+        desc: "Entwicklung einer Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Engine"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere/webapp",
         images: [],
         highlights: [
-            "Vollständige KI-Webanwendung (Next.js / TypeScript / SQL)",
+            "KI-Webanwendung (Next.js / TypeScript / SQL)",
             "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
             "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
             "Agenten-Denkschritte & PDF-Druckversion für Lehrkräfte"
@@ -86,8 +86,8 @@ const projectData = {
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
-        vision: "💡 Meine Vision: Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und präzise kalibrierte ArduPilot-Avionik.",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
+        vision: "💡 Meine Vision: Kontrolle und Flugstabilität durch eigene 3D-CAD-Framekonstruktion in Fusion 360 und kalibrierte ArduPilot-Avionik.",
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
         github: "https://github.com/epx-ducky/portfolio",
         images: [
