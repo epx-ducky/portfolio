@@ -141,7 +141,7 @@ function openModal(projectId) {
         
         <p class="modal-desc">${data.desc}</p>
         
-        ${galleryHtml ? '<h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>' + galleryHtml : ''}
+        ${galleryHtml ? '<h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: Space Grotesk, sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>' + galleryHtml : ''}
 
         <h4 style="color: #ffffff; margin-top: 1.5rem; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
         <ul class="modal-list">
