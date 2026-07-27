@@ -90,7 +90,11 @@ const projectData = {
         desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
         github: "https://github.com/epx-ducky/portfolio",
-        images: [],
+        images: [
+            { src: "images/fpv_drone_cad_1.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Vorderansicht)" },
+            { src: "images/fpv_drone_cad_2.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Seitenansicht)" },
+            { src: "images/fpv_drone_cad_3.png", caption: "Autodesk Fusion 360 - FPV Long Range Carbon Frame" }
+        ],
         highlights: [
             "Konzipiert & strukturiert mit Google Antigravity",
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
