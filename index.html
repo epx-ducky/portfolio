@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260727_v99">
+    <link rel="stylesheet" href="style.css?v=20260727_v100">
     <style>
         /* Force Monochrome Dark Mode Inline Overrides */
         body {
@@ -48,6 +48,11 @@
             border: 1px solid rgba(255, 255, 255, 0.15) !important;
             object-fit: contain !important;
             cursor: pointer !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+        .app-screenshot-grid img:hover {
+            transform: scale(1.04) !important;
+            border-color: #ffffff !important;
         }
     </style>
 </head>
@@ -83,7 +88,7 @@
     <section id="projects" class="section">
         <div class="section-header">
             <h2 class="section-title">Echte Projekte &amp; App-Screenshots</h2>
-            <p class="section-subtitle">Klicke auf die Bilder oder den Button, um Screenshots, CAD-Modelle und Visionen zu öffnen</p>
+            <p class="section-subtitle">🔍 Klicke auf ein beliebiges Bild, um es in voller Größe zu vergrößern</p>
         </div>
 
         <div class="project-grid">
@@ -99,13 +104,13 @@
                 </div>
 
                 <p>
-                    Vollwertige Community- und Event-Plattform für iOS. Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten (Beachvolleyballplatz Badesee, Jahnhalle, Kunstrasenplatz).
+                    Vollwertige Community- und Event-Plattform für iOS. Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten.
                 </p>
 
                 <!-- Embedded App Screenshots Grid -->
                 <div class="app-screenshot-grid">
-                    <img src="images/comonut_feed.png" alt="Comonut Feed Erbach" onclick="openModal('comonut')" loading="eager">
-                    <img src="images/comonut_activities.png" alt="Comonut Aktivitäten & Turniere" onclick="openModal('comonut')" loading="eager">
+                    <img src="images/comonut_feed.png" alt="Comonut Feed Erbach" onclick="openImageModal(this.src, 'Comonut Feed Erbach'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/comonut_activities.png" alt="Comonut Aktivitäten & Turniere" onclick="openImageModal(this.src, 'Comonut Aktivitäten & Turniere'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
                 </div>
 
                 <div class="tech-stack">
@@ -115,7 +120,7 @@
                     <span>iOS Native</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('comonut')">📱 App Screenshots &amp; Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('comonut')">📱 Projekt-Details &amp; Code öffnen</button>
                 </div>
             </div>
 
@@ -135,9 +140,9 @@
 
                 <!-- Embedded App Screenshots Grid -->
                 <div class="app-screenshot-grid">
-                    <img src="images/one_percent_main.png" alt="1% Method Dashboard" onclick="openModal('one_percent')" loading="eager">
-                    <img src="images/one_percent_stats.png" alt="1% Method Attribute" onclick="openModal('one_percent')" loading="eager">
-                    <img src="images/one_percent_graph.png" alt="1% Method Zinseszins Chart" onclick="openModal('one_percent')" loading="eager">
+                    <img src="images/one_percent_main.png" alt="1% Method Dashboard" onclick="openImageModal(this.src, '1% Method Dashboard'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/one_percent_stats.png" alt="1% Method Attribute" onclick="openImageModal(this.src, '1% Method Attribute'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
+                    <img src="images/one_percent_graph.png" alt="1% Method Zinseszins Chart" onclick="openImageModal(this.src, '1% Method Zinseszins Chart'); event.stopPropagation();" loading="eager" title="Klicken für Großansicht">
                 </div>
 
                 <div class="tech-stack">
@@ -146,7 +151,7 @@
                     <span>Graph &amp; Analytics</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('one_percent')">📊 Screenshots &amp; Zinseszins-Chart öffnen</button>
+                    <button class="btn-card" onclick="openModal('one_percent')">📊 Projekt-Details &amp; Code öffnen</button>
                 </div>
             </div>
 
@@ -300,11 +305,20 @@
         </div>
     </section>
 
-    <!-- Modal Popup for High-Res Screenshots & Details -->
+    <!-- Modal Popup for Project Details -->
     <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="modal-close" onclick="closeModal()">&times;</span>
             <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Fullscreen High-Res Image Lightbox Modal -->
+    <div id="image-modal-overlay" class="image-modal-overlay" onclick="closeImageModal()">
+        <div class="image-modal-content" onclick="event.stopPropagation()">
+            <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="image-modal-img" src="" alt="Screenshot Großansicht">
+            <div id="image-modal-caption" class="image-modal-caption"></div>
         </div>
     </div>
 
@@ -313,6 +327,6 @@
         <p>&copy; 2026 Jakob Kamm | Developer &amp; Drone Engineer Portfolio</p>
     </footer>
 
-    <script src="script.js?v=20260727_v99"></script>
+    <script src="script.js?v=20260727_v100"></script>
 </body>
 </html>

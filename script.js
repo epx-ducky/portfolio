@@ -5,7 +5,10 @@ const projectData = {
         vision: "💡 Meine Vision: Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.",
         desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten (Beachvolleyballplatz Badesee, Jahnhalle, Kunstrasenplatz).",
         tech: ["Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
-        images: ["images/comonut_feed.png", "images/comonut_activities.png"],
+        images: [
+            { src: "images/comonut_feed.png", caption: "Comonut Feed & Gemeinde News Erbach" },
+            { src: "images/comonut_activities.png", caption: "Comonut Aktivitäten & Turniere Erbach" }
+        ],
         highlights: [
             "Echtes App-Interface: Gemeinde-News, Müllkalender & Bürgerumfragen",
             "Aktivitäten & Sportstätten-Buchung (Beachvolleyball, Kunst-Fußballplatz, Jahnhalle)",
@@ -19,7 +22,11 @@ const projectData = {
         vision: "💡 Meine Vision: Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – '1% at a time'. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.",
         desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz).",
         tech: ["Swift", "Xcode", "Graph & Analytics", "Habit Logic"],
-        images: ["images/one_percent_main.png", "images/one_percent_stats.png", "images/one_percent_graph.png"],
+        images: [
+            { src: "images/one_percent_main.png", caption: "1% Method Haupt-Dashboard & Gewohnheiten" },
+            { src: "images/one_percent_stats.png", caption: "1% Method Leistungsstatistik & Attribute" },
+            { src: "images/one_percent_graph.png", caption: "1% Method Zinseszins Verlaufsgraph" }
+        ],
         highlights: [
             "Tages-Impact Dashboard (-0.7% bis +6.2% Zuwachs-Berechnung)",
             "Attribut-System: Gesundheit, Sportlichkeit, Disziplin, Finanzen, Intelligenz",
@@ -91,7 +98,7 @@ function openModal(projectId) {
     if (data.images && data.images.length > 0) {
         galleryHtml = `
             <div class="modal-gallery">
-                ${data.images.map(imgSrc => `<img src="${imgSrc}" alt="${data.title}" loading="lazy">`).join('')}
+                ${data.images.map(img => `<img src="${img.src}" alt="${img.caption}" onclick="openImageModal('${img.src}', '${img.caption}'); event.stopPropagation();" title="Klicken für Großansicht" loading="lazy">`).join('')}
             </div>
         `;
     }
@@ -113,9 +120,10 @@ function openModal(projectId) {
         
         <p class="modal-desc">${data.desc}</p>
         
+        <h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>
         ${galleryHtml}
 
-        <h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
+        <h4 style="color: #ffffff; margin-top: 1.5rem; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
         <ul class="modal-list">
             ${data.highlights.map(h => `<li>✨ ${h}</li>`).join('')}
         </ul>
@@ -133,6 +141,24 @@ function closeModal() {
     document.getElementById('modal-overlay').classList.remove('active');
 }
 
+/* Fullscreen High-Res Image Lightbox Modal */
+function openImageModal(imgSrc, captionText) {
+    const modalImg = document.getElementById('image-modal-img');
+    const modalCaption = document.getElementById('image-modal-caption');
+    const modalOverlay = document.getElementById('image-modal-overlay');
+
+    modalImg.src = imgSrc;
+    modalCaption.innerText = captionText || 'Screenshot Großansicht';
+    modalOverlay.classList.add('active');
+}
+
+function closeImageModal() {
+    document.getElementById('image-modal-overlay').classList.remove('active');
+}
+
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Escape') {
+        closeModal();
+        closeImageModal();
+    }
 });
