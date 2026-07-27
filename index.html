@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakob Kamm | Portfolio - Drohnen-Engineering, KI & Software</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260727_v99">
+    <style>
+        /* Force Monochrome Dark Mode Inline Overrides */
+        body {
+            background-color: #070709 !important;
+            color: #fcfcfc !important;
+            font-family: 'Outfit', -apple-system, sans-serif !important;
+        }
+        .bg-glow, .glow-1, .glow-2 { display: none !important; }
+        .hero-title span { color: #ffffff !important; text-decoration: underline !important; }
+        .project-card {
+            background: #111114 !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #fcfcfc !important;
+        }
+        .vision-box {
+            background: rgba(255, 255, 255, 0.04) !important;
+            border-left: 3px solid #ffffff !important;
+            padding: 0.9rem 1.1rem !important;
+            border-radius: 8px !important;
+            margin: 1rem 0 1.5rem 0 !important;
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+            color: #f4f4f5 !important;
+        }
+        .app-screenshot-grid {
+            display: flex !important;
+            gap: 0.8rem !important;
+            margin: 1.2rem 0 !important;
+            overflow-x: auto !important;
+            background: #000000 !important;
+            padding: 0.8rem !important;
+            border-radius: 12px !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        }
+        .app-screenshot-grid img {
+            height: 220px !important;
+            border-radius: 8px !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            object-fit: contain !important;
+            cursor: pointer !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -29,10 +71,10 @@
         <div class="hero-badge">🚀 Duales Studium Kandidat 2027</div>
         <h1 class="hero-title">Drohnen-Programmierung, <span class="monochrome-highlight">KI-Entwicklung</span> &amp; Systems</h1>
         <p class="hero-sub">
-            Konstruktion eigener FPV-Drohnen in Autodesk Fusion 360 &amp; ArduPilot. Entwickler innovativer Apps &amp; Plattformen (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer) mit klarer Problemlöser-Vision. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
+            Konstruktion eigener FPV-Drohnen in Autodesk Fusion 360 &amp; ArduPilot. Entwickler nativer Apps &amp; Plattformen (Comonut, 1%-Methode, PersonalManager, Grady, Notenkorrigierer) mit echter Problemlöser-Vision. Noten: Mathe (14 Pkt.), Physik (14 Pkt.) &amp; Wirtschaftsinformatik (13 Pkt.).
         </p>
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">Projekte &amp; Visionen entdecken ➔</a>
+            <a href="#projects" class="btn btn-primary">Echte Projekte &amp; Screenshots ansehen ➔</a>
             <a href="#about" class="btn btn-secondary">Profil &amp; Noten</a>
         </div>
     </section>
@@ -40,8 +82,8 @@
     <!-- Main Projects Section -->
     <section id="projects" class="section">
         <div class="section-header">
-            <h2 class="section-title">Echte Projekte &amp; Meine Visionen</h2>
-            <p class="section-subtitle">Klicke auf ein Projekt, um die Idee, Vision hinter der App und technische Details zu öffnen</p>
+            <h2 class="section-title">Echte Projekte &amp; App-Screenshots</h2>
+            <p class="section-subtitle">Klicke auf die Bilder oder den Button, um Screenshots, CAD-Modelle und Visionen zu öffnen</p>
         </div>
 
         <div class="project-grid">
@@ -50,14 +92,20 @@
             <div class="project-card featured">
                 <div class="card-tag">iOS Native &amp; Community App</div>
                 <h3>🥥 Comonut App Platform</h3>
-                <p class="vision-quote">
-                    <strong>💡 Die Vision:</strong> Mir fiel auf, dass Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) in Städten wie Erbach oft leer stehen und Kinder sich kaum noch draußen verabreden. Comonut bringt Nachbarn &amp; Sportler zusammen und belebt das lokale Gemeindeleben wieder.
+                
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.
+                </div>
+
+                <p>
+                    Vollwertige Community- und Event-Plattform für iOS. Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten (Beachvolleyballplatz Badesee, Jahnhalle, Kunstrasenplatz).
                 </p>
 
-                <!-- Phone Screenshot Showcase Grid -->
-                <div class="app-screenshot-preview">
-                    <img src="images/comonut_feed.png" alt="Comonut Feed Erbach" onclick="openModal('comonut')" loading="lazy">
-                    <img src="images/comonut_activities.png" alt="Comonut Aktivitäten & Turniere" onclick="openModal('comonut')" loading="lazy">
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/comonut_feed.png" alt="Comonut Feed Erbach" onclick="openModal('comonut')" loading="eager">
+                    <img src="images/comonut_activities.png" alt="Comonut Aktivitäten & Turniere" onclick="openModal('comonut')" loading="eager">
                 </div>
 
                 <div class="tech-stack">
@@ -67,7 +115,7 @@
                     <span>iOS Native</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('comonut')">💡 Vision &amp; Screenshots öffnen</button>
+                    <button class="btn-card" onclick="openModal('comonut')">📱 App Screenshots &amp; Details öffnen</button>
                 </div>
             </div>
 
@@ -75,15 +123,21 @@
             <div class="project-card featured">
                 <div class="card-tag">iOS Habit &amp; Focus App</div>
                 <h3>🌱 1%-Methode App</h3>
-                <p class="vision-quote">
-                    <strong>💡 Die Vision:</strong> Große Veränderungen scheitern meist an zu hohen Zielen. Die App hilft Nutzern, sich Schritt für Schritt selbst zu optimieren – „1% at a time“ – und macht den Zinseszins-Effekt kleiner täglicher Gewohnheiten sichtbar.
+                
+                <div class="vision-box">
+                    <strong>💡 Die Vision &amp; Motivation:</strong><br>
+                    Große Lebensveränderungen scheitern meist an zu hohen, kurzfristigen Zielen. Die 1%-Methode App setzt auf kontinuierliche Selbstoptimierung – „1% at a time“. Wer sich die App lädt, baut Schritt für Schritt bessere Gewohnheiten in Disziplin, Gesundheit, Finanzen und Intelligenz auf und sieht den Zinseszins-Effekt auf dem eigenen Dashboard.
+                </div>
+
+                <p>
+                    Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts (-0.7% bis +6.2%), Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System.
                 </p>
 
-                <!-- Phone Screenshot Showcase Grid -->
-                <div class="app-screenshot-preview three-col">
-                    <img src="images/one_percent_main.png" alt="1% Method Dashboard" onclick="openModal('one_percent')" loading="lazy">
-                    <img src="images/one_percent_stats.png" alt="1% Method Attribute" onclick="openModal('one_percent')" loading="lazy">
-                    <img src="images/one_percent_graph.png" alt="1% Method Zinseszins Chart" onclick="openModal('one_percent')" loading="lazy">
+                <!-- Embedded App Screenshots Grid -->
+                <div class="app-screenshot-grid">
+                    <img src="images/one_percent_main.png" alt="1% Method Dashboard" onclick="openModal('one_percent')" loading="eager">
+                    <img src="images/one_percent_stats.png" alt="1% Method Attribute" onclick="openModal('one_percent')" loading="eager">
+                    <img src="images/one_percent_graph.png" alt="1% Method Zinseszins Chart" onclick="openModal('one_percent')" loading="eager">
                 </div>
 
                 <div class="tech-stack">
@@ -92,7 +146,7 @@
                     <span>Graph &amp; Analytics</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('one_percent')">💡 Vision &amp; Zinseszins-Chart öffnen</button>
+                    <button class="btn-card" onclick="openModal('one_percent')">📊 Screenshots &amp; Zinseszins-Chart öffnen</button>
                 </div>
             </div>
 
@@ -100,8 +154,11 @@
             <div class="project-card">
                 <div class="card-tag">Hardware, CAD &amp; Avionik</div>
                 <h3>🛸 FPV-Drohnen Konstruktion &amp; Flug-Programmierung</h3>
-                <p class="vision-quote">
-                    <strong>💡 Die Vision:</strong> Maximale Kontrolle, Performance und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und exakt kalibrierte ArduPilot-Avionik.
+                <div class="vision-box">
+                    <strong>💡 Die Vision:</strong> Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und exakt kalibrierte ArduPilot-Avionik.
+                </div>
+                <p>
+                    Eigenständige 3D-Konstruktion von Frame-Komponenten in <strong>Autodesk Fusion 360</strong> (Baseplate, Arme, Top Plate, Kamera- &amp; Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via <strong>ArduPilot</strong> für stabilen Flug.
                 </p>
                 <div class="tech-stack">
                     <span>ArduPilot</span>
@@ -118,8 +175,11 @@
             <div class="project-card">
                 <div class="card-tag">iOS &amp; Productivity Management</div>
                 <h3>📊 PersonalManager App</h3>
-                <p class="vision-quote">
+                <div class="vision-box">
                     <strong>💡 Die Vision:</strong> Proaktive Zeit- &amp; Fokussteuerung für den Alltag, um unnötige Bildschirmzeit zu reduzieren und Aufgaben mit einer klaren Zeitleiste strukturiert abzuarbeiten.
+                </div>
+                <p>
+                    Native iOS-Anwendung für persönliches Aufgaben- &amp; Fokus-Management. Entwickelt in SwiftUI mit DashboardView, TaskListView, ProactiveTimelineView und ScreenTime-Verwaltung.
                 </p>
                 <div class="tech-stack">
                     <span>Swift / SwiftUI</span>
@@ -127,7 +187,7 @@
                     <span>ScreenTime Manager</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Vision &amp; Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('personal_manager')">📊 Manager Details öffnen</button>
                 </div>
             </div>
 
@@ -135,8 +195,11 @@
             <div class="project-card">
                 <div class="card-tag">KI-Entwicklung &amp; Education</div>
                 <h3>🎓 Grady App</h3>
-                <p class="vision-quote">
+                <div class="vision-box">
                     <strong>💡 Die Vision:</strong> Schülern das Lernen und das Notenmanagement vereinfachen, um schulischen Erfolg strukturiert und ohne unnötigen Stress erreichbar zu machen.
+                </div>
+                <p>
+                    Intelligente Schul- &amp; Lernanwendung. Entwickelt mit modernsten KI-Entwicklungswerkzeugen zur Unterstützung von Schülern beim Lernen und Notenmanagement.
                 </p>
                 <div class="tech-stack">
                     <span>KI-Entwicklung</span>
@@ -144,7 +207,7 @@
                     <span>Google Antigravity</span>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-card" onclick="openModal('grady')">🎓 Vision &amp; Details öffnen</button>
+                    <button class="btn-card" onclick="openModal('grady')">🎓 Grady Details öffnen</button>
                 </div>
             </div>
 
@@ -152,8 +215,11 @@
             <div class="project-card">
                 <div class="card-tag">EdTech AI Engine</div>
                 <h3>📝 Notenkorrigierer (EdTech AI)</h3>
-                <p class="vision-quote">
+                <div class="vision-box">
                     <strong>💡 Die Vision:</strong> Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.
+                </div>
+                <p>
+                    Webanwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung.
                 </p>
                 <div class="tech-stack">
                     <span>Next.js</span>
@@ -247,6 +313,6 @@
         <p>&copy; 2026 Jakob Kamm | Developer &amp; Drone Engineer Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260727_v99"></script>
 </body>
 </html>
