@@ -1,0 +1,25 @@
+name: OnePercentMethod
+options:
+  bundleIdPrefix: de.villain
+targets:
+  OnePercentMethod:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: App
+        excludes:
+          - "1%-Method/**"
+          - "1%-Method"
+    settings:
+      INFOPLIST_FILE: Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: de.villain.OnePercentMethod
+      IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+      SWIFT_VERSION: "5.9"
+    dependencies:
+      - package: supabase-swift
+        product: Supabase
+packages:
+  supabase-swift:
+    url: https://github.com/supabase-community/supabase-swift.git
+    from: 2.0.0

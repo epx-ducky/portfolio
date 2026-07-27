@@ -1,35 +1,40 @@
 const projectData = {
+    comonut: {
+        title: "🥥 Comonut App Platform",
+        tag: "iOS Native App & Community Plattform",
+        desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten (Beachvolleyballplatz Badesee, Jahnhalle, Kunstrasenplatz).",
+        tech: ["Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
+        images: ["images/comonut_feed.png", "images/comonut_activities.png"],
+        highlights: [
+            "Echtes App-Interface: Gemeinde-News, Müllkalender & Bürgerumfragen",
+            "Aktivitäten & Sportstätten-Buchung (Beachvolleyball, Kunst-Fußballplatz, Jahnhalle)",
+            "Eigenes Datenbankschema (schema.sql) mit Rechteverwaltung & Rollensystem",
+            "Saubere native iOS Xcode Projektstruktur (SwiftUI / UIKit)"
+        ]
+    },
+    one_percent: {
+        title: "🌱 1%-Methode App",
+        tag: "iOS Habit & Focus Tracking App",
+        desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Visualisierung des Tages-Impacts, Leistungsstatistik mit Zinseszins-Verlaufsgraph, Bildschirmzeit-Verwaltung und Attribut-System (Gesundheit, Sportlichkeit, Disziplin, Achtsamkeit, Finanzen, Intelligenz).",
+        tech: ["Swift", "Xcode", "Graph & Analytics", "Habit Logic"],
+        images: ["images/one_percent_main.png", "images/one_percent_stats.png", "images/one_percent_graph.png"],
+        highlights: [
+            "Tages-Impact Dashboard (-0.7% bis +6.2% Zuwachs-Berechnung)",
+            "Attribut-System: Gesundheit, Sportlichkeit, Disziplin, Finanzen, Intelligenz",
+            "Zinseszins-Verlaufsgraph & Bildschirmzeit-Verwaltung",
+            "Strukturierte Gewohnheitsliste mit Level-System"
+        ]
+    },
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
         desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot, damit die Drohne stabil und präzise fliegt.",
         tech: ["ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL", "Elektronik-Löten"],
+        images: [],
         highlights: [
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
-            "Software & Kalibrierung: ArduPilot Konfiguration für stabilen Flug"
-        ]
-    },
-    comonut: {
-        title: "🥥 Comonut App Platform",
-        tag: "iOS Native App & Datenbank-Architektur",
-        desc: "Entwicklung einer vollstrukturierten Community- und Event-Plattform für iOS mit Swift und Xcode. Inklusive komplettem Datenbank-Design (schema.sql), Benutzerrollen, Auditor-Systemen und nativer UI.",
-        tech: ["Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
-        highlights: [
-            "Eigenes Datenbankschema (schema.sql) mit Benutzer- & Rechteverwaltung",
-            "Architektur: Auditor- & Reviewer-Mechanismen zur Inhaltsüberprüfung",
-            "Native iOS Xcode Projektstruktur mit sauberer MVC/MVVM Trennung"
-        ]
-    },
-    grady: {
-        title: "🎓 Grady App",
-        tag: "KI-gestützte Schul- & Lernanwendung",
-        desc: "Konzeption und Entwicklung der Grady App zur Unterstützung von Schülern beim Lernen und Notenmanagement. Umgesetzt unter Einsatz moderner KI-Entwicklungstools (Claude Code & Antigravity).",
-        tech: ["KI-Entwicklung", "Claude Code", "Google Antigravity", "App Architecture"],
-        highlights: [
-            "Intelligente Notenverwaltung und Lernunterstützung für Schüler",
-            "Effiziente Entwicklung durch KI-unterstützte Softwareerstellung",
-            "Benutzerfreundliches App-Design"
+            "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
         ]
     },
     personal_manager: {
@@ -37,20 +42,23 @@ const projectData = {
         tag: "iOS & Productivity Management",
         desc: "Native iOS-Anwendung für persönliches Aufgaben- & Fokus-Management. Enthält DashboardView, TaskListView, ProactiveTimelineView und ScreenTime-Verwaltung.",
         tech: ["Swift / SwiftUI", "Xcode", "Timeline Logic", "ScreenTime Manager"],
+        images: [],
         highlights: [
             "Proaktive Zeitleiste und Dashboard-Visualisierung",
             "Aufgaben- und ScreenTime-Verwaltung in Swift",
             "Saubere Datenmodellierung (DataModels.swift)"
         ]
     },
-    one_percent: {
-        title: "🌱 1%-Methode App",
-        tag: "Habit & Focus Tracking App",
-        desc: "Eigenes App-Projekt basierend auf dem Prinzip der täglichen 1%-Verbesserung. Strukturierte Datenbank, Habit-Tracking und fokussierte Benutzeroberfläche.",
-        tech: ["Swift", "Xcode", "Database Design", "Habit Logic"],
+    grady: {
+        title: "🎓 Grady App",
+        tag: "KI-gestützte Schul- & Lernanwendung",
+        desc: "Konzeption und Entwicklung der Grady App zur Unterstützung von Schülern beim Lernen und Notenmanagement. Umgesetzt unter Einsatz moderner KI-Entwicklungstools (Claude Code & Antigravity).",
+        tech: ["KI-Entwicklung", "Claude Code", "Google Antigravity", "App Architecture"],
+        images: [],
         highlights: [
-            "Strukturierter Datenbank-Aufbau für Gewohnheits-Tracking",
-            "Fokussierte Benutzeroberfläche zur täglichen Selbstverbesserung"
+            "Intelligente Notenverwaltung und Lernunterstützung für Schüler",
+            "Effiziente Entwicklung durch KI-unterstützte Softwareerstellung",
+            "Benutzerfreundliches App-Design"
         ]
     },
     notenkorrigierer: {
@@ -58,21 +66,11 @@ const projectData = {
         tag: "Next.js Web App & KI OCR-Korrektur",
         desc: "Entwicklung einer Web-Anwendung zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung.",
         tech: ["Next.js", "TypeScript", "Multi-Page OCR", "AI Prompting", "SQL Database"],
+        images: [],
         highlights: [
             "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
             "Agenten-Denkschritte für präzises, nachvollziehbares Feedback",
             "PDF-Druckversion & automatische Generierung von Leistungsauswertungen"
-        ]
-    },
-    greenhouse: {
-        title: "🌿 Intelligentes Gewächshaus (Arduino)",
-        tag: "IoT, Embedded Systems & Sensorik",
-        desc: "Entwicklung und Programmierung eines vollautomatisierten Gewächshauses als Schulprojekt. Der Arduino steuert auf Basis von Sensor-Echtzeitdaten (Temperatur, Bodenfeuchtigkeit) automatisch Bewässerungspumpen und Status-LEDs.",
-        tech: ["Arduino IDE", "C / C++", "Bodenfeuchtigkeits- & Temperatursensorik", "Relais- & Aktorsteuerung"],
-        highlights: [
-            "Echtzeit-Schwellenwertsteuerung zur automatischen Bewässerung",
-            "Messintervall-Management im C++ Code",
-            "Praktischer Aufbau von Gehäuse, Verkabelung und Schaltelektronik"
         ]
     }
 };
@@ -82,17 +80,29 @@ function openModal(projectId) {
     if (!data) return;
 
     const modalBody = document.getElementById('modal-body');
+    
+    let galleryHtml = '';
+    if (data.images && data.images.length > 0) {
+        galleryHtml = `
+            <div class="modal-gallery">
+                ${data.images.map(imgSrc => `<img src="${imgSrc}" alt="${data.title}" loading="lazy">`).join('')}
+            </div>
+        `;
+    }
+
     modalBody.innerHTML = `
         <div class="modal-badge">${data.tag}</div>
         <h2 class="modal-title">${data.title}</h2>
         <p class="modal-desc">${data.desc}</p>
         
-        <h4 style="color: #818cf8; margin-bottom: 0.5rem;">🚀 Kern-Features &amp; Highlights:</h4>
+        ${galleryHtml}
+
+        <h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
         <ul class="modal-list">
             ${data.highlights.map(h => `<li>✨ ${h}</li>`).join('')}
         </ul>
 
-        <h4 style="color: #38bdf8; margin-bottom: 0.5rem;">🛠️ Verwendete Technologien:</h4>
+        <h4 style="color: #a1a1aa; margin-bottom: 0.6rem; font-size: 0.85rem; text-transform: uppercase;">🛠️ Verwendete Technologien:</h4>
         <div class="tech-stack">
             ${data.tech.map(t => `<span>${t}</span>`).join('')}
         </div>
