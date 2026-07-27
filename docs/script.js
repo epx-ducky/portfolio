@@ -3,7 +3,7 @@ const projectData = {
         title: "🥥 Comonut App Platform",
         tag: "iOS Native App & Community Plattform",
         vision: "💡 Meine Vision: Mir ist in Städten wie Erbach aufgefallen, dass das Gemeindeleben unorganisierter wird, immer weniger lokale Events stattfinden und Sportstätten (Fußballplätze, Beachvolleyballfelder, Tischtennisplatten) oft leer stehen, weil Kinder und Jugendliche sich kaum noch draußen verabreden. Comonut löst dieses Problem durch eine zentralisierte Plattform mit Sportstätten-Buchung, Bürgerbeteiligung und Müllkalender.",
-        desc: "Vollwertige Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
+        desc: "Community- und Event-Plattform für iOS (Gemeinde Erbach 89155). Inklusive Abfuhrkalender (Restmüll, Gelber Sack, Bioabfall), Mängelmelder, Bürgerbeteiligung (Umfragen) und Event-Buchungssystem für Sportstätten. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Swift", "Xcode", "SQL Database Schema", "iOS Native UI"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/comonut",
         images: [
@@ -57,13 +57,13 @@ const projectData = {
     notenkorrigierer: {
         title: "📝 Notenkorrigierer (EdTech AI Engine)",
         tag: "Next.js Web Application & KI Engine",
-        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und präzises, nachvollziehbares KI-Feedback.",
-        desc: "Entwicklung einer vollständigen Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
+        vision: "💡 Meine Vision: Zeitersparnis bei der Prüfungskorrektur durch automatisierte OCR-Erkennung handschriftlicher Arbeiten und KI-Feedback.",
+        desc: "Entwicklung einer Web-Anwendung (Next.js / TypeScript / SQL) zur KI-unterstützten Auswertung von Prüfungen. Mehrseitiger OCR-Bildupload handschriftlicher Arbeiten mit automatisierter KI-Feedbackgenerierung. Entwickelt mit Google Antigravity.",
         tech: ["Google Antigravity", "Next.js", "TypeScript", "Multi-Page OCR", "AI Engine"],
         github: "https://github.com/epx-ducky/portfolio/tree/main/projects/notenkorriegiere/webapp",
         images: [],
         highlights: [
-            "Vollständige KI-Webanwendung (Next.js / TypeScript / SQL)",
+            "KI-Webanwendung (Next.js / TypeScript / SQL)",
             "Entwickelt mit Google Antigravity für strukturierte KI-Agentenarchitektur",
             "Mehrseitiger OCR-Bildupload zur Erkennung handschriftlicher Arbeiten",
             "Agenten-Denkschritte & PDF-Druckversion für Lehrkräfte"
@@ -86,16 +86,40 @@ const projectData = {
     fpv: {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
-        vision: "💡 Meine Vision: Maximale Kontrolle, Zuverlässigkeit und Flugstabilität durch maßgeschneiderte 3D-CAD-Framekonstruktion in Fusion 360 und präzise kalibrierte ArduPilot-Avionik.",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Präzisionslöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot. Entwickelt mit Google Antigravity.",
-        tech: ["Google Antigravity", "ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL"],
+        vision: "💡 Meine Vision: Kontrolle und Flugstabilität durch eigene 3D-CAD-Framekonstruktion in Fusion 360 und kalibrierte ArduPilot-Avionik.",
+        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot (Google Antigravity Assistenz bei der Elektronik).",
+        tech: ["ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL", "AGY (Elektronik)"],
         github: "https://github.com/epx-ducky/portfolio",
-        images: [],
+        images: [
+            { src: "images/fpv_drone_cad_1.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Vorderansicht)" },
+            { src: "images/fpv_drone_cad_2.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Seitenansicht)" },
+            { src: "images/fpv_drone_cad_3.png", caption: "Autodesk Fusion 360 - FPV Long Range Carbon Frame" }
+        ],
         highlights: [
-            "Konzipiert & strukturiert mit Google Antigravity",
+            "Eigenständige Konzeption & Strukturierung",
             "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
             "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
             "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
+        ]
+    },
+    trading_bot: {
+        title: "📈 Autonomous Algorithmic AI Trading System",
+        tag: "Python, AI & Brokerage API",
+        vision: "💡 Meine Vision: Emotionen aus dem Trading eliminieren. Ein vollautomatisiertes, sich selbst optimierendes System, das Finanzdaten, News-Sentiment und US-Kongress-Transaktionen in Echtzeit analysiert und mathematisch fundierte Entscheidungen trifft.",
+        desc: "Entwicklung und Implementierung eines vollautomatisierten Algorithmic-Trading-Systems in Python zur Echtzeit-Analyse alternativer Finanzdaten und autonomen Handelsausführung via Brokerage-APIs (Alpaca). Entwickelt mit Google Antigravity.",
+        tech: ["Python", "Google Antigravity", "Alpaca API", "VADER / Gemini API (NLP)", "macOS LaunchAgents", "Cron"],
+        github: "",
+        images: [
+            { src: "images/trading_bot_discord_1.png", caption: "Discord Webhook: KI-Strategieoptimierung & Stop-Loss Updates" },
+            { src: "images/trading_bot_alpaca.png", caption: "Alpaca Trading Dashboard: Live-Positionen & Portfolio Balance" },
+            { src: "images/trading_bot_discord_2.png", caption: "Discord Webhook: Sell Alerts & Trailing Stop-Loss Anpassungen" }
+        ],
+        highlights: [
+            "NLP & Sentiment-Analyse: Automatische Auswertung von Finanznachrichten mittels VADER & Gemini API",
+            "Alternative Data Processing: Automatisches Scraping von US-Kongress-Transaktionen (Pelosi-Copy-Trading) und Regierungsaufträgen",
+            "AutoML Loop: Tägliche Post-Trade-Analyse zur Identifikation von Verlustursachen und autonomen Anpassung von Risikoparametern",
+            "Dynamic Risk Management: High-Water Mark Trailing Profit Locks zur Absicherung von Buchgewinnen",
+            "Automated Pipeline: Vollautomatischer 24/7-Betrieb mit Echtzeit-Telemetry via Discord-Webhooks"
         ]
     }
 };
@@ -141,7 +165,7 @@ function openModal(projectId) {
         
         <p class="modal-desc">${data.desc}</p>
         
-        ${galleryHtml ? '<h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>' + galleryHtml : ''}
+        ${galleryHtml ? '<h4 style="color: #ffffff; margin-bottom: 0.6rem; font-family: Space Grotesk, sans-serif;">🔍 App-Screenshots (Klicken zum Vergrößern):</h4>' + galleryHtml : ''}
 
         <h4 style="color: #ffffff; margin-top: 1.5rem; margin-bottom: 0.6rem; font-family: 'Space Grotesk', sans-serif;">🚀 Kern-Features &amp; Highlights:</h4>
         <ul class="modal-list">
