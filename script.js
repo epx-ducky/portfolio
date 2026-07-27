@@ -106,8 +106,8 @@ const projectData = {
         title: "📈 Autonomous Algorithmic AI Trading System",
         tag: "Python, AI & Brokerage API",
         vision: "💡 Meine Vision: Emotionen aus dem Trading eliminieren. Ein vollautomatisiertes, lernendes System, das Finanzdaten, News und US-Kongress-Transaktionen in Echtzeit analysiert und logisch fundierte Entscheidungen trifft.",
-        desc: "Entwicklung und Implementierung eines vollautomatisierten Trading-Systems in Python zur Echtzeit-Analyse von Finanzdaten und autonomen Handelsausführung. Entwickelt mit Google Antigravity.",
-        tech: ["Python", "Google Antigravity", "Alpaca API", "Textanalyse (Gemini API)", "Automatisierung (Cron)"],
+        desc: "Entwicklung und Implementierung eines vollautomatisierten Trading-Systems in Python zur Echtzeit-Analyse von Finanzdaten und autonomen Handelsausführung (Paper-Trading mit virtuellem Kapital). Entwickelt mit Google Antigravity.",
+        tech: ["Python", "Google Antigravity", "Alpaca API (Paper)", "Textanalyse (Gemini API)", "Automatisierung (Cron)"],
         github: "",
         images: [
             { src: "images/trading_bot_discord_1.png", caption: "Discord: KI-Strategieanpassung & Updates" },
