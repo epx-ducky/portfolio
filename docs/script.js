@@ -91,6 +91,7 @@ const projectData = {
         tech: ["Autodesk Fusion 360", "ArduPilot", "C++", "3D-Druck", "Elektronik", "Google Antigravity"],
         github: "",
         images: [
+            { src: "images/fpv_drone_size_comparison.jpg", caption: "Größenvergleich: Whoop vs. Long Range Drohne" },
             { src: "images/fpv_drone_long_range.jpg", caption: "Fertige Long Range Drohne (aus Carbon gefräst)" },
             { src: "images/fpv_drone_whoop.jpg", caption: "Fertige Whoop/Freestyle Drohne (3D-gedruckt)" },
             { src: "images/fpv_drone_cad_1.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Vorderansicht)" },
