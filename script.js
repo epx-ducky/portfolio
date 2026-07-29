@@ -87,19 +87,22 @@ const projectData = {
         title: "🛸 FPV-Drohnen Konstruktion & Flug-Programmierung",
         tag: "Hardware, CAD & ArduPilot",
         vision: "💡 Meine Vision: Kontrolle und Flugstabilität durch eigene 3D-CAD-Framekonstruktion in Fusion 360 und kalibrierte ArduPilot-Avionik.",
-        desc: "Eigenständige Konzeption und 3D-Konstruktion eines FPV-Drohnen-Frames in Autodesk Fusion 360 (Baseplate, Arme, Top Plate, Kamera- und Antennenhalterungen). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot (Google Antigravity Assistenz bei der Elektronik).",
-        tech: ["ArduPilot", "Autodesk Fusion 360", "Flight Controller", "3D-Druck / STL", "AGY (Elektronik)"],
-        github: "https://github.com/epx-ducky/portfolio",
+        desc: "Eigenständige 3D-Konstruktion von Frame-Komponenten in Autodesk Fusion 360. Bau einer Long Range Drohne (aus Carbon gefräst) sowie einer Whoop/Freestyle Drohne (3D-gedruckt). Verlöten der Elektronik und Programmierung/Kalibrierung der Flugsteuerung via ArduPilot für stabilen Flug.",
+        tech: ["Autodesk Fusion 360", "ArduPilot", "C++", "3D-Druck", "Elektronik", "Google Antigravity"],
+        github: "",
         images: [
+            { src: "images/fpv_drone_long_range.jpg", caption: "Fertige Long Range Drohne (aus Carbon gefräst)" },
+            { src: "images/fpv_drone_whoop.jpg", caption: "Fertige Whoop/Freestyle Drohne (3D-gedruckt)" },
             { src: "images/fpv_drone_cad_1.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Vorderansicht)" },
             { src: "images/fpv_drone_cad_2.png", caption: "Autodesk Fusion 360 - FPV Drohnen Frame (Seitenansicht)" },
             { src: "images/fpv_drone_cad_3.png", caption: "Autodesk Fusion 360 - FPV Long Range Carbon Frame" }
         ],
         highlights: [
-            "Eigenständige Konzeption & Strukturierung",
-            "CAD-Dateien: Baseplate.stl, Top Plate.stl, Arm.stl, Kamera Halterung.stl",
-            "Hardware-Erfahrung: Motorenverdrahtung, ESC-Abstimmung & Sensorintegration",
-            "Software & Kalibrierung: ArduPilot Konfiguration für präzisen Flug"
+            "Bau einer Long Range Drohne (aus Carbon gefräst)",
+            "Bau einer Whoop/Freestyle Drohne (3D-gedruckt)",
+            "Eigenständige Konzeption & Strukturierung in CAD",
+            "CAD-Dateien: Baseplate, Top Plate, Arm, Kamera-Halterung",
+            "Verlöten der Elektronik & ArduPilot Setup"
         ]
     },
     trading_bot: {
